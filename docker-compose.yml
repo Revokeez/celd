@@ -1,0 +1,19 @@
+# Local development database. The password comes from your shell or a git-ignored .env file.
+services:
+  db:
+    image: postgres:16-alpine
+    environment:
+      POSTGRES_USER: celd
+      POSTGRES_DB: celd
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:?Set POSTGRES_PASSWORD in .env - see README section 2}
+    ports:
+      - "5432:5432"
+    volumes:
+      - celd-data:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U celd -d celd"]
+      interval: 5s
+      retries: 10
+
+volumes:
+  celd-data:
