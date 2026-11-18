@@ -3,6 +3,14 @@
 export type Role = 'Student' | 'Staff';
 export type ReservationStatus = 'Reserved' | 'CheckedOut' | 'Cancelled' | 'Returned';
 
+export interface PagedResult<T> {
+  items: T[];
+  page: number;
+  pageSize: number;
+  totalCount: number;
+  totalPages: number;
+}
+
 export interface CurrentUser {
   id: string;
   displayName: string;

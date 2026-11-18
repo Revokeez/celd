@@ -90,7 +90,7 @@ Follow `student1` reserving the projector. Each step names the file and line whe
 2. **HTTP request** — `client/src/api.ts:93` sends `POST /api/reservations` with body `{ equipmentItemId }` **only**, plus the `X-CSRF-TOKEN` header and the `celd.session` cookie.
 3. **Session check** — `server/Celd.Api/Auth/SessionCookieEvents.cs:16` confirms the session row is still open. If it was revoked, the request stops here with 401.
 4. **Role check** — `[Authorize(Roles = "Student")]` on `ReservationsController.Create` (`Controllers/ReservationsController.cs:20`). Staff get 403 here.
-5. **CSRF check** — `Auth/CsrfProtectionFilter.cs` validates the header. A missing token gets 400 `csrf_failed`.
+5. **CSRF check** — The built-in `[AutoValidateAntiforgeryToken]` attribute on `ReservationsController` validates the header; `Http/CeldClientErrorFactory.cs` formats the failure. A missing token gets 400 `csrf_failed`.
 6. **Controller** — `ReservationsController.cs:23` passes only the item id to the Central Application Service.
 7. **Central Application Service** — `Application/CentralApplicationService.cs:31-32` reads the caller from the session (`Auth/CurrentUser.cs:41`), rechecks the Student role, and delegates.
 8. **Reservation Service** — `Application/ReservationService.cs:15` checks the item exists, then runs a friendly availability check at line 24. That check is not the guarantee.

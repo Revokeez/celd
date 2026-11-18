@@ -54,18 +54,65 @@ export function Notice({ kind, children }: { kind: 'success' | 'info' | 'error';
 
 /** Status is always written out as text, never shown by colour alone (NFR-USAB-001). */
 export function AvailabilityBadge({ available }: { available: boolean }) {
-  return <span className={`badge ${available ? 'ok' : 'no'}`}>{available ? '✓ Available' : '✕ Unavailable'}</span>;
+  return <span className={`badge ${available ? 'ok' : 'off'}`}>{available ? '✓ Available' : '✕ Unavailable'}</span>;
 }
 
 const statusLabel: Record<ReservationStatus, string> = {
-  Reserved: 'Reserved',
-  CheckedOut: 'Checked out',
-  Cancelled: 'Cancelled',
-  Returned: 'Returned',
+  Reserved: '● Reserved',
+  CheckedOut: '↗ Checked out',
+  Cancelled: '✕ Cancelled',
+  Returned: '✓ Returned',
 };
 
 export function StatusBadge({ status }: { status: ReservationStatus }) {
   return <span className={`badge status-${status}`}>{statusLabel[status]}</span>;
+}
+
+/** Plain-language wording for history events (the server stores short codes). */
+const eventLabel: Record<string, string> = {
+  Created: 'Reserved',
+  Cancelled: 'Cancelled',
+  PickedUp: 'Picked up',
+  Returned: 'Returned',
+};
+export const describeEvent = (eventType: string) => eventLabel[eventType] ?? eventType;
+
+/** Item name with its asset code on a smaller second line, so the name stays easy to scan. */
+export function ItemCell({ name, assetCode, href }: { name: string; assetCode: string; href: string }) {
+  return (
+    <div className="item-cell">
+      <a href={href}>{name}</a>
+      <code>{assetCode}</code>
+    </div>
+  );
+}
+
+/**
+ * Asks before an action that cannot be undone. Shown inline (not a browser pop-up) so it is
+ * readable, keyboard-friendly and announced to screen readers.
+ */
+export function ConfirmPanel({
+  message, confirmLabel, cancelLabel, busy, busyLabel, onConfirm, onCancel,
+}: {
+  message: ReactNode;
+  confirmLabel: string;
+  cancelLabel: string;
+  busy: boolean;
+  busyLabel: string;
+  onConfirm: () => void;
+  onCancel: () => void;
+}) {
+  return (
+    <div role="alertdialog" aria-live="assertive" aria-label="Please confirm" className="confirm">
+      <p>{message}</p>
+      <div className="actions">
+        <button type="button" className="btn-danger" onClick={onConfirm} disabled={busy} autoFocus>
+          {busy ? busyLabel : confirmLabel}
+        </button>
+        <button type="button" className="btn-secondary" onClick={onCancel} disabled={busy}>{cancelLabel}</button>
+      </div>
+    </div>
+  );
 }
 
 export function formatTime(utc: string): string {

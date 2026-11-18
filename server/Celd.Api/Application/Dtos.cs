@@ -6,6 +6,9 @@ namespace Celd.Api.Application;
 
 public sealed record EquipmentSummaryDto(Guid Id, string AssetCode, string Name, string Category, bool IsAvailable);
 
+/// <summary>One page of a list. Page and PageSize are the values actually applied, after clamping.</summary>
+public sealed record PagedResult<T>(IReadOnlyList<T> Items, int Page, int PageSize, int TotalCount, int TotalPages);
+
 public sealed record EquipmentDetailDto(Guid Id, string AssetCode, string Name, string Category, string Description, bool IsAvailable);
 
 public sealed record ReservationDto(

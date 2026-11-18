@@ -11,6 +11,7 @@ namespace Celd.Api.Controllers;
 
 [ApiController]
 [Route("api/auth")]
+[AutoValidateAntiforgeryToken] // NFR-SEC-002: login and logout need the X-CSRF-TOKEN header.
 public sealed class AuthController(AuthService auth, IAntiforgery antiforgery) : ControllerBase
 {
     /// <summary>

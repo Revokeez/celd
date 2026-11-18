@@ -86,7 +86,7 @@ Set `"Seed:PerformanceData": true` to add the 50-item / 100-history data set for
 | --- | --- |
 | React + TypeScript Client | `client/src/` — `api.ts` (HTTP, CSRF, error types), `pages/` |
 | ASP.NET Core API Controllers | `server/Celd.Api/Controllers/` — thin, no rules |
-| Authentication & Authorization | `server/Celd.Api/Auth/` — cookie sessions, session revocation, CSRF filter, current user |
+| Authentication & Authorization | `server/Celd.Api/Auth/` — cookie sessions, session revocation, current user |
 | Central Application Service | `Application/CentralApplicationService.cs` — entry point, role recheck, delegation |
 | Equipment Service | `Application/EquipmentService.cs` — catalog, computed availability |
 | Reservation Service | `Application/ReservationService.cs` — create, ownership, transitions, saves |
@@ -106,7 +106,7 @@ Where each critical rule is enforced:
 | Stale updates | `Reservation.Version` concurrency token | A change based on an outdated read gets 409 `stale_state`. |
 | BR-RES-004 atomic history | `ReservationService` + `HistoryOperations` | Change and event are saved in **one** `SaveChanges` call, which is one transaction. |
 | FR-AUT-002 sign-out | `Auth/SessionCookieEvents.cs` | Sessions are stored server-side; a copied cookie stops working after sign-out. |
-| NFR-SEC-002 CSRF | `Auth/CsrfProtectionFilter.cs` | Every POST needs the `X-CSRF-TOKEN` header. |
+| NFR-SEC-002 CSRF | `[AutoValidateAntiforgeryToken]` on `AuthController`, `ReservationsController`, `StaffReservationsController`; failures formatted by `Http/CeldClientErrorFactory.cs` | Every POST needs the `X-CSRF-TOKEN` header. |
 
 ## 6. Test
 

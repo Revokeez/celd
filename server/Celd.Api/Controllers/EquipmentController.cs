@@ -12,9 +12,10 @@ namespace Celd.Api.Controllers;
 public sealed class EquipmentController(CentralApplicationService app) : ControllerBase
 {
     [HttpGet]
-    public async Task<ActionResult<IReadOnlyList<EquipmentSummaryDto>>> List(
-        [FromQuery] string? search, [FromQuery] string? category, CancellationToken ct) =>
-        Ok(await app.ListEquipmentAsync(search, category, ct));
+    public async Task<ActionResult<PagedResult<EquipmentSummaryDto>>> List(
+        [FromQuery] string? search, [FromQuery] string? category, [FromQuery] bool? available,
+        [FromQuery] int? page, [FromQuery] int? pageSize, CancellationToken ct) =>
+        Ok(await app.ListEquipmentAsync(search, category, available == true, page, pageSize, ct));
 
     [HttpGet("categories")]
     public async Task<ActionResult<IReadOnlyList<string>>> Categories(CancellationToken ct) =>

@@ -1,5 +1,5 @@
 import type {
-  CurrentUser, EquipmentDetail, EquipmentSummary, HistoryEvent, Problem, Reservation, ReservationStatus,
+  CurrentUser, EquipmentDetail, EquipmentSummary, HistoryEvent, PagedResult, Problem, Reservation, ReservationStatus,
 } from './types';
 
 /** The server answered with an error (FR-ERR-001 problem body). */
@@ -73,8 +73,17 @@ const query = (params: Record<string, string | undefined>) => {
 };
 
 export const api = {
-  listEquipment: (search?: string, category?: string) =>
-    request<EquipmentSummary[]>('GET', `/api/equipment${query({ search, category })}`),
+  listEquipment: (search?: string, category?: string, page = 1, pageSize?: number, availableOnly = false) =>
+    request<PagedResult<EquipmentSummary>>(
+      'GET',
+      `/api/equipment${query({
+        search,
+        category,
+        available: availableOnly ? 'true' : undefined,
+        page: String(page),
+        pageSize: pageSize?.toString(),
+      })}`,
+    ),
   categories: () => request<string[]>('GET', '/api/equipment/categories'),
   getEquipment: (id: string) => request<EquipmentDetail>('GET', `/api/equipment/${id}`),
 

@@ -14,9 +14,11 @@ public sealed class LifecycleAndCatalogApiTests(PostgresFixture postgres) : Inte
     [Fact] // IT-CAT-01 — FR-CAT-001
     public async Task Visitor_lists_seeded_catalog_with_availability()
     {
-        var items = (await NewClient().Http.GetFromJsonAsync<List<EquipmentSummaryDto>>("/api/equipment"))!;
+        var page = (await NewClient().Http.GetFromJsonAsync<PagedResult<EquipmentSummaryDto>>("/api/equipment?pageSize=100"))!;
+        var items = page.Items;
 
         Assert.True(items.Count >= 6);
+        Assert.Equal(page.TotalCount, items.Count);
         Assert.Equal(items.Count, items.Select(i => i.AssetCode).Distinct().Count());
         Assert.All(items, i => Assert.True(i.IsAvailable));
     }
@@ -26,15 +28,36 @@ public sealed class LifecycleAndCatalogApiTests(PostgresFixture postgres) : Inte
     {
         var client = NewClient().Http;
 
-        var cameras = (await client.GetFromJsonAsync<List<EquipmentSummaryDto>>("/api/equipment?search=CAMERA"))!;
-        var audio = (await client.GetFromJsonAsync<List<EquipmentSummaryDto>>("/api/equipment?category=audio"))!;
-        var combined = (await client.GetFromJsonAsync<List<EquipmentSummaryDto>>("/api/equipment?search=recorder&category=Audio"))!;
-        var none = (await client.GetFromJsonAsync<List<EquipmentSummaryDto>>("/api/equipment?search=zzz-no-match"))!;
+        var cameras = (await client.GetFromJsonAsync<PagedResult<EquipmentSummaryDto>>("/api/equipment?search=CAMERA"))!.Items;
+        var audio = (await client.GetFromJsonAsync<PagedResult<EquipmentSummaryDto>>("/api/equipment?category=audio"))!.Items;
+        var combined = (await client.GetFromJsonAsync<PagedResult<EquipmentSummaryDto>>("/api/equipment?search=recorder&category=Audio"))!.Items;
+        var none = (await client.GetFromJsonAsync<PagedResult<EquipmentSummaryDto>>("/api/equipment?search=zzz-no-match"))!;
 
         Assert.Equal(new[] { "CAM-001", "CAM-002" }, cameras.Select(i => i.AssetCode).OrderBy(c => c));
         Assert.All(audio, i => Assert.Equal("Audio", i.Category));
         Assert.Equal("AUD-002", Assert.Single(combined).AssetCode);
-        Assert.Empty(none);
+        Assert.Empty(none.Items);
+        Assert.Equal(0, none.TotalCount);
+    }
+
+    [Fact] // IT-CAT-04 — catalog pagination
+    public async Task Catalog_pages_cover_every_item_exactly_once()
+    {
+        var client = NewClient().Http;
+        var everything = (await client.GetFromJsonAsync<PagedResult<EquipmentSummaryDto>>("/api/equipment?pageSize=100"))!;
+
+        var seen = new List<string>();
+        var firstPage = (await client.GetFromJsonAsync<PagedResult<EquipmentSummaryDto>>("/api/equipment?page=1&pageSize=2"))!;
+        for (var p = 1; p <= firstPage.TotalPages; p++)
+        {
+            var page = (await client.GetFromJsonAsync<PagedResult<EquipmentSummaryDto>>($"/api/equipment?page={p}&pageSize=2"))!;
+            Assert.Equal(p, page.Page);
+            Assert.True(page.Items.Count <= 2);
+            seen.AddRange(page.Items.Select(i => i.AssetCode));
+        }
+
+        Assert.Equal(everything.Items.Select(i => i.AssetCode), seen);
+        Assert.Equal((int)Math.Ceiling(everything.TotalCount / 2.0), firstPage.TotalPages);
     }
 
     [Fact] // IT-CAT-03 — FR-CAT-003, UC-001 E6.1

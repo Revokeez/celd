@@ -209,12 +209,50 @@ public sealed class CentralApplicationServiceTests : IDisposable
     [Fact] // FR-CAT-002
     public async Task Catalog_search_is_case_insensitive_and_combines_with_category()
     {
-        var byName = await _h.As(null, app => app.ListEquipmentAsync("CAMERA", null, default));
-        var combined = await _h.As(null, app => app.ListEquipmentAsync("kit", "camera", default));
-        var none = await _h.As(null, app => app.ListEquipmentAsync("kit", "audio", default));
+        var byName = await _h.As(null, app => app.ListEquipmentAsync("CAMERA", null, false, null, null, default));
+        var combined = await _h.As(null, app => app.ListEquipmentAsync("kit", "camera", false, null, null, default));
+        var none = await _h.As(null, app => app.ListEquipmentAsync("kit", "audio", false, null, null, default));
 
-        Assert.Equal("CAM-001", Assert.Single(byName).AssetCode);
-        Assert.Equal("CAM-001", Assert.Single(combined).AssetCode);
-        Assert.Empty(none);
+        Assert.Equal("CAM-001", Assert.Single(byName.Items).AssetCode);
+        Assert.Equal("CAM-001", Assert.Single(combined.Items).AssetCode);
+        Assert.Empty(none.Items);
+        Assert.Equal(0, none.TotalCount);
+    }
+
+    [Fact] // Catalog pagination
+    public async Task Catalog_pages_are_disjoint_and_report_totals()
+    {
+        var first = await _h.As(null, app => app.ListEquipmentAsync(null, null, false, 1, 1, default));
+        var second = await _h.As(null, app => app.ListEquipmentAsync(null, null, false, 2, 1, default));
+
+        Assert.Equal(2, first.TotalCount);
+        Assert.Equal(2, first.TotalPages);
+        Assert.Single(first.Items);
+        Assert.Single(second.Items);
+        Assert.NotEqual(first.Items[0].Id, second.Items[0].Id);
+    }
+
+    [Fact] // Catalog pagination: out-of-range input is clamped, not rejected
+    public async Task Catalog_paging_clamps_out_of_range_values()
+    {
+        var beyondEnd = await _h.As(null, app => app.ListEquipmentAsync(null, null, false, 99, 1, default));
+        var belowStart = await _h.As(null, app => app.ListEquipmentAsync(null, null, false, 0, 0, default));
+        var huge = await _h.As(null, app => app.ListEquipmentAsync(null, null, false, 1, 10_000, default));
+
+        Assert.Equal(2, beyondEnd.Page);
+        Assert.Equal(1, belowStart.Page);
+        Assert.Equal(1, belowStart.PageSize);
+        Assert.Equal(EquipmentService.MaxPageSize, huge.PageSize);
+    }
+
+    [Fact] // Catalog "Available only" filter is applied before paging
+    public async Task Catalog_available_only_hides_reserved_items_and_counts_correctly()
+    {
+        await _h.As(_h.Student1, app => app.ReserveAsync(_h.ItemA.Id, default));
+
+        var available = await _h.As(null, app => app.ListEquipmentAsync(null, null, true, null, null, default));
+
+        Assert.Equal(_h.ItemB.Id, Assert.Single(available.Items).Id);
+        Assert.Equal(1, available.TotalCount);
     }
 }

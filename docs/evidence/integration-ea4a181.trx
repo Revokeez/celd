@@ -1,0 +1,1026 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TestRun id="b135ca9b-179e-4530-b4de-89a63f425e54" name="cponce@DBM-CPONCE-LG 2026-11-09 09:23:46" runUser="DORADOBEACH\cponce" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <Times creation="2026-11-09T09:23:46.6773125-04:03" queuing="2026-11-09T09:23:46.6773128-04:03" start="2026-11-09T09:23:39.1600726-04:03" finish="2026-11-09T09:23:57.0258641-04:03" />
+  <TestSettings name="default" id="3e24db94-d8ef-4e41-bb1e-d18374f68ab4">
+    <Deployment runDeploymentRoot="cponce_DBM-CPONCE-LG_2026-11-09_09_23_46" />
+  </TestSettings>
+  <Results>
+    <UnitTestResult executionId="767856a7-f76b-4c73-a6f8-bf148e36ff64" testId="e4a383b6-7d57-5dec-4866-6905ad6e40da" testName="Celd.Tests.Integration.AuthorizationApiTests.Wrong_password_and_unknown_user_get_identical_responses" computerName="DBM-CPONCE-LG" duration="00:00:00.0935529" startTime="2026-11-09T09:23:50.7603208-04:03" endTime="2026-11-09T09:23:50.7603209-04:03" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="767856a7-f76b-4c73-a6f8-bf148e36ff64" />
+    <UnitTestResult executionId="32668bd8-9a31-4667-8e16-e25bccd64476" testId="250019e2-18b4-a9b5-1fa2-0f19b86db63c" testName="Celd.Tests.Integration.ConcurrencyTests.Database_refuses_a_second_active_reservation_inserted_directly" computerName="DBM-CPONCE-LG" duration="00:00:00.0086716" startTime="2026-11-09T09:23:52.4274704-04:03" endTime="2026-11-09T09:23:52.4274705-04:03" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="32668bd8-9a31-4667-8e16-e25bccd64476" />
+    <UnitTestResult executionId="6c1985b7-cbbf-41f6-8259-ed0bc890960c" testId="3f7b52c6-8312-3e9f-22ef-4b6ae2d79958" testName="Celd.Tests.Integration.LifecycleAndCatalogApiTests.Reservations_cannot_be_deleted_through_the_api" computerName="DBM-CPONCE-LG" duration="00:00:00.0771042" startTime="2026-11-09T09:23:53.8053740-04:03" endTime="2026-11-09T09:23:53.8053741-04:03" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="6c1985b7-cbbf-41f6-8259-ed0bc890960c" />
+    <UnitTestResult executionId="43954cfa-89cc-4c2c-8064-67ec5e7e01b9" testId="76f30cb2-1f92-6586-3403-69c4db193060" testName="Celd.Tests.Integration.AuthorizationApiTests.Students_and_visitors_cannot_record_pickup_or_return_or_see_the_staff_queue" computerName="DBM-CPONCE-LG" duration="00:00:00.0826477" startTime="2026-11-09T09:23:49.5063414-04:03" endTime="2026-11-09T09:23:49.5063415-04:03" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="43954cfa-89cc-4c2c-8064-67ec5e7e01b9" />
+    <UnitTestResult executionId="47000240-4d85-4a4b-8803-34753ce38471" testId="9f53a5e9-ab23-b41c-bb1d-1a93b0c17e0c" testName="Celd.Tests.Integration.AtomicHistoryTests.Full_lifecycle_records_one_event_per_change_with_actor_and_time" computerName="DBM-CPONCE-LG" duration="00:00:00.5092664" startTime="2026-11-09T09:23:46.6619277-04:03" endTime="2026-11-09T09:23:46.6619508-04:03" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="47000240-4d85-4a4b-8803-34753ce38471" />
+    <UnitTestResult executionId="509c7c95-e9a5-4380-8771-cd7f3a20f1d0" testId="5d581ee7-f503-639a-3868-a49d2e833c5a" testName="Celd.Tests.Integration.ConcurrencyTests.Database_index_rejects_a_competitor_that_slipped_past_the_availability_check" computerName="DBM-CPONCE-LG" duration="00:00:00.0775739" startTime="2026-11-09T09:23:53.1123370-04:03" endTime="2026-11-09T09:23:53.1123370-04:03" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="509c7c95-e9a5-4380-8771-cd7f3a20f1d0" />
+    <UnitTestResult executionId="a70b8e65-b7c6-4ca1-b7a4-fbc836b1f40d" testId="b773bf25-4d60-b7f6-fff8-b3dd819ed6ac" testName="Celd.Tests.Integration.ConcurrencyTests.Parallel_reserve_requests_yield_exactly_one_active_reservation" computerName="DBM-CPONCE-LG" duration="00:00:00.2024791" startTime="2026-11-09T09:23:52.1646040-04:03" endTime="2026-11-09T09:23:52.1646041-04:03" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="a70b8e65-b7c6-4ca1-b7a4-fbc836b1f40d" />
+    <UnitTestResult executionId="28fc7630-56e4-4cba-adc8-68cb705c3a48" testId="b5e87844-8bf4-ac06-b934-0b20b6bf1fbc" testName="Celd.Tests.Integration.ConcurrencyTests.Parallel_cancel_and_pickup_accept_exactly_one" computerName="DBM-CPONCE-LG" duration="00:00:00.1972653" startTime="2026-11-09T09:23:51.7380232-04:03" endTime="2026-11-09T09:23:51.7380232-04:03" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="28fc7630-56e4-4cba-adc8-68cb705c3a48" />
+    <UnitTestResult executionId="718f2b38-fc70-4504-82bb-cbea97873a4c" testId="a51f35fd-b88b-1e20-4c3c-cb35bcc7f845" testName="Celd.Tests.Integration.AtomicHistoryTests.Failed_history_write_rolls_back_the_status_change" computerName="DBM-CPONCE-LG" duration="00:00:00.1597520" startTime="2026-11-09T09:23:47.9286823-04:03" endTime="2026-11-09T09:23:47.9286824-04:03" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="718f2b38-fc70-4504-82bb-cbea97873a4c" />
+    <UnitTestResult executionId="bc1ca748-81e9-4d94-a874-67910eced456" testId="d44a889a-1ba3-d5c3-d6e8-2e8107c9930d" testName="Celd.Tests.Integration.AuthorizationApiTests.Student_cannot_read_or_cancel_another_students_reservation" computerName="DBM-CPONCE-LG" duration="00:00:00.1549839" startTime="2026-11-09T09:23:49.1954396-04:03" endTime="2026-11-09T09:23:49.1954397-04:03" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="bc1ca748-81e9-4d94-a874-67910eced456" />
+    <UnitTestResult executionId="45671ce9-b110-4e9b-a180-da2403d865ef" testId="f12e8b3d-f802-31dd-03de-a54b2a698a21" testName="Celd.Tests.Integration.ConcurrencyTests.Stale_pickup_is_rejected_when_the_reservation_changed_underneath_it" computerName="DBM-CPONCE-LG" duration="00:00:00.1459096" startTime="2026-11-09T09:23:52.8016832-04:03" endTime="2026-11-09T09:23:52.8016833-04:03" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="45671ce9-b110-4e9b-a180-da2403d865ef" />
+    <UnitTestResult executionId="76c1a1cf-98ad-42c2-a0f8-73c50534e242" testId="c507faeb-dbdc-4c9a-a4f7-35477423c331" testName="Celd.Tests.Integration.LifecycleAndCatalogApiTests.Unknown_status_filter_is_rejected" computerName="DBM-CPONCE-LG" duration="00:00:00.0619020" startTime="2026-11-09T09:23:55.4390669-04:03" endTime="2026-11-09T09:23:55.4390670-04:03" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="76c1a1cf-98ad-42c2-a0f8-73c50534e242" />
+    <UnitTestResult executionId="86f83dd3-5d97-4857-b61e-0c1a76271cdc" testId="c2d5c110-6b29-fc9e-60d4-27c4dc97231c" testName="Celd.Tests.Integration.LifecycleAndCatalogApiTests.Reserved_item_becomes_unavailable_to_another_student" computerName="DBM-CPONCE-LG" duration="00:00:00.1211955" startTime="2026-11-09T09:23:55.1495336-04:03" endTime="2026-11-09T09:23:55.1495336-04:03" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="86f83dd3-5d97-4857-b61e-0c1a76271cdc" />
+    <UnitTestResult executionId="7155fac4-b380-47eb-b07e-61bd6d657b0d" testId="754f0100-d0a1-2b17-eead-f6845b141f76" testName="Celd.Tests.Integration.AuthorizationApiTests.Session_cookie_is_HttpOnly_Secure_and_SameSite_Strict" computerName="DBM-CPONCE-LG" duration="00:00:00.0514897" startTime="2026-11-09T09:23:48.2273351-04:03" endTime="2026-11-09T09:23:48.2273352-04:03" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="7155fac4-b380-47eb-b07e-61bd6d657b0d" />
+    <UnitTestResult executionId="6ac9f742-773e-479b-9ddd-a5621acdbb3a" testId="d4ce81f1-1cae-d159-8231-7519baaef37e" testName="Celd.Tests.Integration.LifecycleAndCatalogApiTests.Owner_cancels_and_record_stays_in_history_and_item_is_available" computerName="DBM-CPONCE-LG" duration="00:00:00.1062394" startTime="2026-11-09T09:23:55.7849685-04:03" endTime="2026-11-09T09:23:55.7849686-04:03" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="6ac9f742-773e-479b-9ddd-a5621acdbb3a" />
+    <UnitTestResult executionId="0c9b87a3-511c-47bf-81c2-98ccd1ffb5ba" testId="964ddf32-7f37-7c77-490e-f1176a281bea" testName="Celd.Tests.Integration.AuthorizationApiTests.Valid_accounts_sign_in_and_see_their_role(userName: &quot;student1&quot;, role: &quot;Student&quot;)" computerName="DBM-CPONCE-LG" duration="00:00:00.0589621" startTime="2026-11-09T09:23:48.5252140-04:03" endTime="2026-11-09T09:23:48.5252141-04:03" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="0c9b87a3-511c-47bf-81c2-98ccd1ffb5ba" />
+    <UnitTestResult executionId="70c3d0b3-482e-4400-b883-9364fe5f6274" testId="b875bffd-aa93-d814-33da-72cc21604b80" testName="Celd.Tests.Integration.LifecycleAndCatalogApiTests.Invalid_and_repeated_transitions_are_conflicts_with_no_extra_history" computerName="DBM-CPONCE-LG" duration="00:00:00.1587030" startTime="2026-11-09T09:23:53.4966325-04:03" endTime="2026-11-09T09:23:53.4966326-04:03" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="70c3d0b3-482e-4400-b883-9364fe5f6274" />
+    <UnitTestResult executionId="1f62558e-6a0e-4ec9-9496-a5acb18b8e35" testId="64f17a06-b244-50c7-d1b8-9fff7eb86830" testName="Celd.Tests.Integration.AuthorizationApiTests.State_changing_request_without_csrf_token_is_refused" computerName="DBM-CPONCE-LG" duration="00:00:00.0688178" startTime="2026-11-09T09:23:51.0645905-04:03" endTime="2026-11-09T09:23:51.0645905-04:03" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="1f62558e-6a0e-4ec9-9496-a5acb18b8e35" />
+    <UnitTestResult executionId="6157f23c-aac3-4857-b86d-62621bada33a" testId="e339345f-867d-4e92-7b63-4baa6239f48c" testName="Celd.Tests.Integration.LifecycleAndCatalogApiTests.Missing_item_is_a_controlled_not_found" computerName="DBM-CPONCE-LG" duration="00:00:00.0102263" startTime="2026-11-09T09:23:54.3511929-04:03" endTime="2026-11-09T09:23:54.3511929-04:03" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="6157f23c-aac3-4857-b86d-62621bada33a" />
+    <UnitTestResult executionId="1760d3d7-4391-41ca-8615-66213c19f1fb" testId="33223734-8bc3-aaa4-d117-9543e1446ee4" testName="Celd.Tests.Integration.LifecycleAndCatalogApiTests.Visitor_lists_seeded_catalog_with_availability" computerName="DBM-CPONCE-LG" duration="00:00:00.0112300" startTime="2026-11-09T09:23:56.3021027-04:03" endTime="2026-11-09T09:23:56.3021027-04:03" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="1760d3d7-4391-41ca-8615-66213c19f1fb" />
+    <UnitTestResult executionId="441e864e-e5c8-4232-b9e6-5b91ac20ba15" testId="5d94cc5e-e2e9-0df3-6457-0f13b877756e" testName="Celd.Tests.Integration.AtomicHistoryTests.Records_survive_an_application_restart" computerName="DBM-CPONCE-LG" duration="00:00:00.2157926" startTime="2026-11-09T09:23:47.1236725-04:03" endTime="2026-11-09T09:23:47.1236725-04:03" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="441e864e-e5c8-4232-b9e6-5b91ac20ba15" />
+    <UnitTestResult executionId="b8c9278c-e064-4e5f-bd0c-7988246a4832" testId="54c23678-41e6-c4db-9fd5-5c3012f66339" testName="Celd.Tests.Integration.AuthorizationApiTests.Valid_accounts_sign_in_and_see_their_role(userName: &quot;staff1&quot;, role: &quot;Staff&quot;)" computerName="DBM-CPONCE-LG" duration="00:00:00.0581290" startTime="2026-11-09T09:23:48.8168513-04:03" endTime="2026-11-09T09:23:48.8168514-04:03" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="b8c9278c-e064-4e5f-bd0c-7988246a4832" />
+    <UnitTestResult executionId="a728e22a-ff55-4b83-95fa-5b4f2d9ef65d" testId="433b140a-3a8f-8b4c-5b53-12b41fb73ffe" testName="Celd.Tests.Integration.LifecycleAndCatalogApiTests.Catalog_search_and_category_filter_including_empty_result" computerName="DBM-CPONCE-LG" duration="00:00:00.0414903" startTime="2026-11-09T09:23:56.0621126-04:03" endTime="2026-11-09T09:23:56.0621127-04:03" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="a728e22a-ff55-4b83-95fa-5b4f2d9ef65d" />
+    <UnitTestResult executionId="5e6cb66e-3e5b-453b-8cb4-b74f5b325174" testId="88832aee-4019-0aa9-5720-291d7901e877" testName="Celd.Tests.Integration.ConcurrencyTests.Cancelled_and_returned_rows_do_not_count_toward_the_index" computerName="DBM-CPONCE-LG" duration="00:00:00.0127537" startTime="2026-11-09T09:23:51.3043978-04:03" endTime="2026-11-09T09:23:51.3043979-04:03" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="5e6cb66e-3e5b-453b-8cb4-b74f5b325174" />
+    <UnitTestResult executionId="6b6377c4-4f65-4817-a534-a737f05f9ed6" testId="e597a1a7-a327-de7a-b85f-296a1450b72d" testName="Celd.Tests.Integration.LifecycleAndCatalogApiTests.Staff_queue_pickup_return_and_item_can_be_reserved_again" computerName="DBM-CPONCE-LG" duration="00:00:00.2032036" startTime="2026-11-09T09:23:54.7945155-04:03" endTime="2026-11-09T09:23:54.7945155-04:03" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="6b6377c4-4f65-4817-a534-a737f05f9ed6" />
+    <UnitTestResult executionId="77f648b6-a05d-4cb4-9371-3d613d1665e6" testId="8ac97d78-fc65-ac2e-dc84-82d1e1a8ac8c" testName="Celd.Tests.Integration.AuthorizationApiTests.Reservation_owner_comes_from_the_session_not_the_request_body" computerName="DBM-CPONCE-LG" duration="00:00:00.0782311" startTime="2026-11-09T09:23:49.8121143-04:03" endTime="2026-11-09T09:23:49.8121144-04:03" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="77f648b6-a05d-4cb4-9371-3d613d1665e6" />
+    <UnitTestResult executionId="821c0ae4-2530-43a3-939d-1953c15cbca5" testId="56d8c1e6-7452-1570-ea64-355cb78450c5" testName="Celd.Tests.Integration.LifecycleAndCatalogApiTests.Missing_item_id_is_a_validation_problem" computerName="DBM-CPONCE-LG" duration="00:00:00.0656228" startTime="2026-11-09T09:23:54.0992736-04:03" endTime="2026-11-09T09:23:54.0992736-04:03" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="821c0ae4-2530-43a3-939d-1953c15cbca5" />
+    <UnitTestResult executionId="ee2e1f8e-d327-4619-bafb-44acbd2d5219" testId="d3ca05b1-93fb-7c95-d6f5-2d1fc75448e2" testName="Celd.Tests.Integration.AtomicHistoryTests.Failed_history_write_rolls_back_the_new_reservation" computerName="DBM-CPONCE-LG" duration="00:00:00.1480887" startTime="2026-11-09T09:23:47.5207264-04:03" endTime="2026-11-09T09:23:47.5207265-04:03" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="ee2e1f8e-d327-4619-bafb-44acbd2d5219" />
+    <UnitTestResult executionId="6be31d9b-9810-475d-845c-56407fcc88fa" testId="bb400699-78e7-7bc9-6905-b8c53305aaad" testName="Celd.Tests.Integration.AuthorizationApiTests.Ended_session_cannot_be_replayed" computerName="DBM-CPONCE-LG" duration="00:00:00.0764867" startTime="2026-11-09T09:23:50.4273541-04:03" endTime="2026-11-09T09:23:50.4273542-04:03" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="6be31d9b-9810-475d-845c-56407fcc88fa" />
+    <UnitTestResult executionId="fcb27795-a687-40f7-bd7c-495abc53698d" testId="82914917-d561-37b4-e25d-e0b16b6f59e8" testName="Celd.Tests.Integration.AuthorizationApiTests.Visitors_get_401_and_staff_get_403_when_reserving" computerName="DBM-CPONCE-LG" duration="00:00:00.0590837" startTime="2026-11-09T09:23:50.1189600-04:03" endTime="2026-11-09T09:23:50.1189601-04:03" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="fcb27795-a687-40f7-bd7c-495abc53698d" />
+  </Results>
+  <TestDefinitions>
+    <UnitTest name="Celd.Tests.Integration.AuthorizationApiTests.Students_and_visitors_cannot_record_pickup_or_return_or_see_the_staff_queue" storage="c:\comp3402\celd\tests\celd.tests\bin\debug\net10.0\celd.tests.dll" id="76f30cb2-1f92-6586-3403-69c4db193060">
+      <Execution id="43954cfa-89cc-4c2c-8064-67ec5e7e01b9" />
+      <TestMethod codeBase="C:\COMP3402\celd\tests\Celd.Tests\bin\Debug\net10.0\Celd.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="Celd.Tests.Integration.AuthorizationApiTests" name="Students_and_visitors_cannot_record_pickup_or_return_or_see_the_staff_queue" />
+    </UnitTest>
+    <UnitTest name="Celd.Tests.Integration.LifecycleAndCatalogApiTests.Reserved_item_becomes_unavailable_to_another_student" storage="c:\comp3402\celd\tests\celd.tests\bin\debug\net10.0\celd.tests.dll" id="c2d5c110-6b29-fc9e-60d4-27c4dc97231c">
+      <Execution id="86f83dd3-5d97-4857-b61e-0c1a76271cdc" />
+      <TestMethod codeBase="C:\COMP3402\celd\tests\Celd.Tests\bin\Debug\net10.0\Celd.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="Celd.Tests.Integration.LifecycleAndCatalogApiTests" name="Reserved_item_becomes_unavailable_to_another_student" />
+    </UnitTest>
+    <UnitTest name="Celd.Tests.Integration.LifecycleAndCatalogApiTests.Visitor_lists_seeded_catalog_with_availability" storage="c:\comp3402\celd\tests\celd.tests\bin\debug\net10.0\celd.tests.dll" id="33223734-8bc3-aaa4-d117-9543e1446ee4">
+      <Execution id="1760d3d7-4391-41ca-8615-66213c19f1fb" />
+      <TestMethod codeBase="C:\COMP3402\celd\tests\Celd.Tests\bin\Debug\net10.0\Celd.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="Celd.Tests.Integration.LifecycleAndCatalogApiTests" name="Visitor_lists_seeded_catalog_with_availability" />
+    </UnitTest>
+    <UnitTest name="Celd.Tests.Integration.ConcurrencyTests.Stale_pickup_is_rejected_when_the_reservation_changed_underneath_it" storage="c:\comp3402\celd\tests\celd.tests\bin\debug\net10.0\celd.tests.dll" id="f12e8b3d-f802-31dd-03de-a54b2a698a21">
+      <Execution id="45671ce9-b110-4e9b-a180-da2403d865ef" />
+      <TestMethod codeBase="C:\COMP3402\celd\tests\Celd.Tests\bin\Debug\net10.0\Celd.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="Celd.Tests.Integration.ConcurrencyTests" name="Stale_pickup_is_rejected_when_the_reservation_changed_underneath_it" />
+    </UnitTest>
+    <UnitTest name="Celd.Tests.Integration.LifecycleAndCatalogApiTests.Missing_item_id_is_a_validation_problem" storage="c:\comp3402\celd\tests\celd.tests\bin\debug\net10.0\celd.tests.dll" id="56d8c1e6-7452-1570-ea64-355cb78450c5">
+      <Execution id="821c0ae4-2530-43a3-939d-1953c15cbca5" />
+      <TestMethod codeBase="C:\COMP3402\celd\tests\Celd.Tests\bin\Debug\net10.0\Celd.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="Celd.Tests.Integration.LifecycleAndCatalogApiTests" name="Missing_item_id_is_a_validation_problem" />
+    </UnitTest>
+    <UnitTest name="Celd.Tests.Integration.ConcurrencyTests.Parallel_cancel_and_pickup_accept_exactly_one" storage="c:\comp3402\celd\tests\celd.tests\bin\debug\net10.0\celd.tests.dll" id="b5e87844-8bf4-ac06-b934-0b20b6bf1fbc">
+      <Execution id="28fc7630-56e4-4cba-adc8-68cb705c3a48" />
+      <TestMethod codeBase="C:\COMP3402\celd\tests\Celd.Tests\bin\Debug\net10.0\Celd.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="Celd.Tests.Integration.ConcurrencyTests" name="Parallel_cancel_and_pickup_accept_exactly_one" />
+    </UnitTest>
+    <UnitTest name="Celd.Tests.Integration.LifecycleAndCatalogApiTests.Missing_item_is_a_controlled_not_found" storage="c:\comp3402\celd\tests\celd.tests\bin\debug\net10.0\celd.tests.dll" id="e339345f-867d-4e92-7b63-4baa6239f48c">
+      <Execution id="6157f23c-aac3-4857-b86d-62621bada33a" />
+      <TestMethod codeBase="C:\COMP3402\celd\tests\Celd.Tests\bin\Debug\net10.0\Celd.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="Celd.Tests.Integration.LifecycleAndCatalogApiTests" name="Missing_item_is_a_controlled_not_found" />
+    </UnitTest>
+    <UnitTest name="Celd.Tests.Integration.LifecycleAndCatalogApiTests.Owner_cancels_and_record_stays_in_history_and_item_is_available" storage="c:\comp3402\celd\tests\celd.tests\bin\debug\net10.0\celd.tests.dll" id="d4ce81f1-1cae-d159-8231-7519baaef37e">
+      <Execution id="6ac9f742-773e-479b-9ddd-a5621acdbb3a" />
+      <TestMethod codeBase="C:\COMP3402\celd\tests\Celd.Tests\bin\Debug\net10.0\Celd.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="Celd.Tests.Integration.LifecycleAndCatalogApiTests" name="Owner_cancels_and_record_stays_in_history_and_item_is_available" />
+    </UnitTest>
+    <UnitTest name="Celd.Tests.Integration.AtomicHistoryTests.Failed_history_write_rolls_back_the_new_reservation" storage="c:\comp3402\celd\tests\celd.tests\bin\debug\net10.0\celd.tests.dll" id="d3ca05b1-93fb-7c95-d6f5-2d1fc75448e2">
+      <Execution id="ee2e1f8e-d327-4619-bafb-44acbd2d5219" />
+      <TestMethod codeBase="C:\COMP3402\celd\tests\Celd.Tests\bin\Debug\net10.0\Celd.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="Celd.Tests.Integration.AtomicHistoryTests" name="Failed_history_write_rolls_back_the_new_reservation" />
+    </UnitTest>
+    <UnitTest name="Celd.Tests.Integration.AuthorizationApiTests.Valid_accounts_sign_in_and_see_their_role(userName: &quot;staff1&quot;, role: &quot;Staff&quot;)" storage="c:\comp3402\celd\tests\celd.tests\bin\debug\net10.0\celd.tests.dll" id="54c23678-41e6-c4db-9fd5-5c3012f66339">
+      <Execution id="b8c9278c-e064-4e5f-bd0c-7988246a4832" />
+      <TestMethod codeBase="C:\COMP3402\celd\tests\Celd.Tests\bin\Debug\net10.0\Celd.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="Celd.Tests.Integration.AuthorizationApiTests" name="Valid_accounts_sign_in_and_see_their_role" />
+    </UnitTest>
+    <UnitTest name="Celd.Tests.Integration.AtomicHistoryTests.Full_lifecycle_records_one_event_per_change_with_actor_and_time" storage="c:\comp3402\celd\tests\celd.tests\bin\debug\net10.0\celd.tests.dll" id="9f53a5e9-ab23-b41c-bb1d-1a93b0c17e0c">
+      <Execution id="47000240-4d85-4a4b-8803-34753ce38471" />
+      <TestMethod codeBase="C:\COMP3402\celd\tests\Celd.Tests\bin\Debug\net10.0\Celd.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="Celd.Tests.Integration.AtomicHistoryTests" name="Full_lifecycle_records_one_event_per_change_with_actor_and_time" />
+    </UnitTest>
+    <UnitTest name="Celd.Tests.Integration.LifecycleAndCatalogApiTests.Unknown_status_filter_is_rejected" storage="c:\comp3402\celd\tests\celd.tests\bin\debug\net10.0\celd.tests.dll" id="c507faeb-dbdc-4c9a-a4f7-35477423c331">
+      <Execution id="76c1a1cf-98ad-42c2-a0f8-73c50534e242" />
+      <TestMethod codeBase="C:\COMP3402\celd\tests\Celd.Tests\bin\Debug\net10.0\Celd.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="Celd.Tests.Integration.LifecycleAndCatalogApiTests" name="Unknown_status_filter_is_rejected" />
+    </UnitTest>
+    <UnitTest name="Celd.Tests.Integration.ConcurrencyTests.Database_refuses_a_second_active_reservation_inserted_directly" storage="c:\comp3402\celd\tests\celd.tests\bin\debug\net10.0\celd.tests.dll" id="250019e2-18b4-a9b5-1fa2-0f19b86db63c">
+      <Execution id="32668bd8-9a31-4667-8e16-e25bccd64476" />
+      <TestMethod codeBase="C:\COMP3402\celd\tests\Celd.Tests\bin\Debug\net10.0\Celd.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="Celd.Tests.Integration.ConcurrencyTests" name="Database_refuses_a_second_active_reservation_inserted_directly" />
+    </UnitTest>
+    <UnitTest name="Celd.Tests.Integration.LifecycleAndCatalogApiTests.Invalid_and_repeated_transitions_are_conflicts_with_no_extra_history" storage="c:\comp3402\celd\tests\celd.tests\bin\debug\net10.0\celd.tests.dll" id="b875bffd-aa93-d814-33da-72cc21604b80">
+      <Execution id="70c3d0b3-482e-4400-b883-9364fe5f6274" />
+      <TestMethod codeBase="C:\COMP3402\celd\tests\Celd.Tests\bin\Debug\net10.0\Celd.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="Celd.Tests.Integration.LifecycleAndCatalogApiTests" name="Invalid_and_repeated_transitions_are_conflicts_with_no_extra_history" />
+    </UnitTest>
+    <UnitTest name="Celd.Tests.Integration.AuthorizationApiTests.Visitors_get_401_and_staff_get_403_when_reserving" storage="c:\comp3402\celd\tests\celd.tests\bin\debug\net10.0\celd.tests.dll" id="82914917-d561-37b4-e25d-e0b16b6f59e8">
+      <Execution id="fcb27795-a687-40f7-bd7c-495abc53698d" />
+      <TestMethod codeBase="C:\COMP3402\celd\tests\Celd.Tests\bin\Debug\net10.0\Celd.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="Celd.Tests.Integration.AuthorizationApiTests" name="Visitors_get_401_and_staff_get_403_when_reserving" />
+    </UnitTest>
+    <UnitTest name="Celd.Tests.Integration.AuthorizationApiTests.Wrong_password_and_unknown_user_get_identical_responses" storage="c:\comp3402\celd\tests\celd.tests\bin\debug\net10.0\celd.tests.dll" id="e4a383b6-7d57-5dec-4866-6905ad6e40da">
+      <Execution id="767856a7-f76b-4c73-a6f8-bf148e36ff64" />
+      <TestMethod codeBase="C:\COMP3402\celd\tests\Celd.Tests\bin\Debug\net10.0\Celd.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="Celd.Tests.Integration.AuthorizationApiTests" name="Wrong_password_and_unknown_user_get_identical_responses" />
+    </UnitTest>
+    <UnitTest name="Celd.Tests.Integration.LifecycleAndCatalogApiTests.Reservations_cannot_be_deleted_through_the_api" storage="c:\comp3402\celd\tests\celd.tests\bin\debug\net10.0\celd.tests.dll" id="3f7b52c6-8312-3e9f-22ef-4b6ae2d79958">
+      <Execution id="6c1985b7-cbbf-41f6-8259-ed0bc890960c" />
+      <TestMethod codeBase="C:\COMP3402\celd\tests\Celd.Tests\bin\Debug\net10.0\Celd.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="Celd.Tests.Integration.LifecycleAndCatalogApiTests" name="Reservations_cannot_be_deleted_through_the_api" />
+    </UnitTest>
+    <UnitTest name="Celd.Tests.Integration.AuthorizationApiTests.Student_cannot_read_or_cancel_another_students_reservation" storage="c:\comp3402\celd\tests\celd.tests\bin\debug\net10.0\celd.tests.dll" id="d44a889a-1ba3-d5c3-d6e8-2e8107c9930d">
+      <Execution id="bc1ca748-81e9-4d94-a874-67910eced456" />
+      <TestMethod codeBase="C:\COMP3402\celd\tests\Celd.Tests\bin\Debug\net10.0\Celd.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="Celd.Tests.Integration.AuthorizationApiTests" name="Student_cannot_read_or_cancel_another_students_reservation" />
+    </UnitTest>
+    <UnitTest name="Celd.Tests.Integration.LifecycleAndCatalogApiTests.Staff_queue_pickup_return_and_item_can_be_reserved_again" storage="c:\comp3402\celd\tests\celd.tests\bin\debug\net10.0\celd.tests.dll" id="e597a1a7-a327-de7a-b85f-296a1450b72d">
+      <Execution id="6b6377c4-4f65-4817-a534-a737f05f9ed6" />
+      <TestMethod codeBase="C:\COMP3402\celd\tests\Celd.Tests\bin\Debug\net10.0\Celd.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="Celd.Tests.Integration.LifecycleAndCatalogApiTests" name="Staff_queue_pickup_return_and_item_can_be_reserved_again" />
+    </UnitTest>
+    <UnitTest name="Celd.Tests.Integration.ConcurrencyTests.Parallel_reserve_requests_yield_exactly_one_active_reservation" storage="c:\comp3402\celd\tests\celd.tests\bin\debug\net10.0\celd.tests.dll" id="b773bf25-4d60-b7f6-fff8-b3dd819ed6ac">
+      <Execution id="a70b8e65-b7c6-4ca1-b7a4-fbc836b1f40d" />
+      <TestMethod codeBase="C:\COMP3402\celd\tests\Celd.Tests\bin\Debug\net10.0\Celd.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="Celd.Tests.Integration.ConcurrencyTests" name="Parallel_reserve_requests_yield_exactly_one_active_reservation" />
+    </UnitTest>
+    <UnitTest name="Celd.Tests.Integration.ConcurrencyTests.Cancelled_and_returned_rows_do_not_count_toward_the_index" storage="c:\comp3402\celd\tests\celd.tests\bin\debug\net10.0\celd.tests.dll" id="88832aee-4019-0aa9-5720-291d7901e877">
+      <Execution id="5e6cb66e-3e5b-453b-8cb4-b74f5b325174" />
+      <TestMethod codeBase="C:\COMP3402\celd\tests\Celd.Tests\bin\Debug\net10.0\Celd.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="Celd.Tests.Integration.ConcurrencyTests" name="Cancelled_and_returned_rows_do_not_count_toward_the_index" />
+    </UnitTest>
+    <UnitTest name="Celd.Tests.Integration.AuthorizationApiTests.Session_cookie_is_HttpOnly_Secure_and_SameSite_Strict" storage="c:\comp3402\celd\tests\celd.tests\bin\debug\net10.0\celd.tests.dll" id="754f0100-d0a1-2b17-eead-f6845b141f76">
+      <Execution id="7155fac4-b380-47eb-b07e-61bd6d657b0d" />
+      <TestMethod codeBase="C:\COMP3402\celd\tests\Celd.Tests\bin\Debug\net10.0\Celd.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="Celd.Tests.Integration.AuthorizationApiTests" name="Session_cookie_is_HttpOnly_Secure_and_SameSite_Strict" />
+    </UnitTest>
+    <UnitTest name="Celd.Tests.Integration.ConcurrencyTests.Database_index_rejects_a_competitor_that_slipped_past_the_availability_check" storage="c:\comp3402\celd\tests\celd.tests\bin\debug\net10.0\celd.tests.dll" id="5d581ee7-f503-639a-3868-a49d2e833c5a">
+      <Execution id="509c7c95-e9a5-4380-8771-cd7f3a20f1d0" />
+      <TestMethod codeBase="C:\COMP3402\celd\tests\Celd.Tests\bin\Debug\net10.0\Celd.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="Celd.Tests.Integration.ConcurrencyTests" name="Database_index_rejects_a_competitor_that_slipped_past_the_availability_check" />
+    </UnitTest>
+    <UnitTest name="Celd.Tests.Integration.AtomicHistoryTests.Failed_history_write_rolls_back_the_status_change" storage="c:\comp3402\celd\tests\celd.tests\bin\debug\net10.0\celd.tests.dll" id="a51f35fd-b88b-1e20-4c3c-cb35bcc7f845">
+      <Execution id="718f2b38-fc70-4504-82bb-cbea97873a4c" />
+      <TestMethod codeBase="C:\COMP3402\celd\tests\Celd.Tests\bin\Debug\net10.0\Celd.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="Celd.Tests.Integration.AtomicHistoryTests" name="Failed_history_write_rolls_back_the_status_change" />
+    </UnitTest>
+    <UnitTest name="Celd.Tests.Integration.LifecycleAndCatalogApiTests.Catalog_search_and_category_filter_including_empty_result" storage="c:\comp3402\celd\tests\celd.tests\bin\debug\net10.0\celd.tests.dll" id="433b140a-3a8f-8b4c-5b53-12b41fb73ffe">
+      <Execution id="a728e22a-ff55-4b83-95fa-5b4f2d9ef65d" />
+      <TestMethod codeBase="C:\COMP3402\celd\tests\Celd.Tests\bin\Debug\net10.0\Celd.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="Celd.Tests.Integration.LifecycleAndCatalogApiTests" name="Catalog_search_and_category_filter_including_empty_result" />
+    </UnitTest>
+    <UnitTest name="Celd.Tests.Integration.AuthorizationApiTests.Ended_session_cannot_be_replayed" storage="c:\comp3402\celd\tests\celd.tests\bin\debug\net10.0\celd.tests.dll" id="bb400699-78e7-7bc9-6905-b8c53305aaad">
+      <Execution id="6be31d9b-9810-475d-845c-56407fcc88fa" />
+      <TestMethod codeBase="C:\COMP3402\celd\tests\Celd.Tests\bin\Debug\net10.0\Celd.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="Celd.Tests.Integration.AuthorizationApiTests" name="Ended_session_cannot_be_replayed" />
+    </UnitTest>
+    <UnitTest name="Celd.Tests.Integration.AuthorizationApiTests.State_changing_request_without_csrf_token_is_refused" storage="c:\comp3402\celd\tests\celd.tests\bin\debug\net10.0\celd.tests.dll" id="64f17a06-b244-50c7-d1b8-9fff7eb86830">
+      <Execution id="1f62558e-6a0e-4ec9-9496-a5acb18b8e35" />
+      <TestMethod codeBase="C:\COMP3402\celd\tests\Celd.Tests\bin\Debug\net10.0\Celd.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="Celd.Tests.Integration.AuthorizationApiTests" name="State_changing_request_without_csrf_token_is_refused" />
+    </UnitTest>
+    <UnitTest name="Celd.Tests.Integration.AuthorizationApiTests.Reservation_owner_comes_from_the_session_not_the_request_body" storage="c:\comp3402\celd\tests\celd.tests\bin\debug\net10.0\celd.tests.dll" id="8ac97d78-fc65-ac2e-dc84-82d1e1a8ac8c">
+      <Execution id="77f648b6-a05d-4cb4-9371-3d613d1665e6" />
+      <TestMethod codeBase="C:\COMP3402\celd\tests\Celd.Tests\bin\Debug\net10.0\Celd.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="Celd.Tests.Integration.AuthorizationApiTests" name="Reservation_owner_comes_from_the_session_not_the_request_body" />
+    </UnitTest>
+    <UnitTest name="Celd.Tests.Integration.AuthorizationApiTests.Valid_accounts_sign_in_and_see_their_role(userName: &quot;student1&quot;, role: &quot;Student&quot;)" storage="c:\comp3402\celd\tests\celd.tests\bin\debug\net10.0\celd.tests.dll" id="964ddf32-7f37-7c77-490e-f1176a281bea">
+      <Execution id="0c9b87a3-511c-47bf-81c2-98ccd1ffb5ba" />
+      <TestMethod codeBase="C:\COMP3402\celd\tests\Celd.Tests\bin\Debug\net10.0\Celd.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="Celd.Tests.Integration.AuthorizationApiTests" name="Valid_accounts_sign_in_and_see_their_role" />
+    </UnitTest>
+    <UnitTest name="Celd.Tests.Integration.AtomicHistoryTests.Records_survive_an_application_restart" storage="c:\comp3402\celd\tests\celd.tests\bin\debug\net10.0\celd.tests.dll" id="5d94cc5e-e2e9-0df3-6457-0f13b877756e">
+      <Execution id="441e864e-e5c8-4232-b9e6-5b91ac20ba15" />
+      <TestMethod codeBase="C:\COMP3402\celd\tests\Celd.Tests\bin\Debug\net10.0\Celd.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="Celd.Tests.Integration.AtomicHistoryTests" name="Records_survive_an_application_restart" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestEntries>
+    <TestEntry testId="e4a383b6-7d57-5dec-4866-6905ad6e40da" executionId="767856a7-f76b-4c73-a6f8-bf148e36ff64" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="250019e2-18b4-a9b5-1fa2-0f19b86db63c" executionId="32668bd8-9a31-4667-8e16-e25bccd64476" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="3f7b52c6-8312-3e9f-22ef-4b6ae2d79958" executionId="6c1985b7-cbbf-41f6-8259-ed0bc890960c" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="76f30cb2-1f92-6586-3403-69c4db193060" executionId="43954cfa-89cc-4c2c-8064-67ec5e7e01b9" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="9f53a5e9-ab23-b41c-bb1d-1a93b0c17e0c" executionId="47000240-4d85-4a4b-8803-34753ce38471" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="5d581ee7-f503-639a-3868-a49d2e833c5a" executionId="509c7c95-e9a5-4380-8771-cd7f3a20f1d0" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="b773bf25-4d60-b7f6-fff8-b3dd819ed6ac" executionId="a70b8e65-b7c6-4ca1-b7a4-fbc836b1f40d" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="b5e87844-8bf4-ac06-b934-0b20b6bf1fbc" executionId="28fc7630-56e4-4cba-adc8-68cb705c3a48" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="a51f35fd-b88b-1e20-4c3c-cb35bcc7f845" executionId="718f2b38-fc70-4504-82bb-cbea97873a4c" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="d44a889a-1ba3-d5c3-d6e8-2e8107c9930d" executionId="bc1ca748-81e9-4d94-a874-67910eced456" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="f12e8b3d-f802-31dd-03de-a54b2a698a21" executionId="45671ce9-b110-4e9b-a180-da2403d865ef" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="c507faeb-dbdc-4c9a-a4f7-35477423c331" executionId="76c1a1cf-98ad-42c2-a0f8-73c50534e242" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="c2d5c110-6b29-fc9e-60d4-27c4dc97231c" executionId="86f83dd3-5d97-4857-b61e-0c1a76271cdc" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="754f0100-d0a1-2b17-eead-f6845b141f76" executionId="7155fac4-b380-47eb-b07e-61bd6d657b0d" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="d4ce81f1-1cae-d159-8231-7519baaef37e" executionId="6ac9f742-773e-479b-9ddd-a5621acdbb3a" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="964ddf32-7f37-7c77-490e-f1176a281bea" executionId="0c9b87a3-511c-47bf-81c2-98ccd1ffb5ba" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="b875bffd-aa93-d814-33da-72cc21604b80" executionId="70c3d0b3-482e-4400-b883-9364fe5f6274" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="64f17a06-b244-50c7-d1b8-9fff7eb86830" executionId="1f62558e-6a0e-4ec9-9496-a5acb18b8e35" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="e339345f-867d-4e92-7b63-4baa6239f48c" executionId="6157f23c-aac3-4857-b86d-62621bada33a" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="33223734-8bc3-aaa4-d117-9543e1446ee4" executionId="1760d3d7-4391-41ca-8615-66213c19f1fb" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="5d94cc5e-e2e9-0df3-6457-0f13b877756e" executionId="441e864e-e5c8-4232-b9e6-5b91ac20ba15" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="54c23678-41e6-c4db-9fd5-5c3012f66339" executionId="b8c9278c-e064-4e5f-bd0c-7988246a4832" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="433b140a-3a8f-8b4c-5b53-12b41fb73ffe" executionId="a728e22a-ff55-4b83-95fa-5b4f2d9ef65d" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="88832aee-4019-0aa9-5720-291d7901e877" executionId="5e6cb66e-3e5b-453b-8cb4-b74f5b325174" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="e597a1a7-a327-de7a-b85f-296a1450b72d" executionId="6b6377c4-4f65-4817-a534-a737f05f9ed6" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="8ac97d78-fc65-ac2e-dc84-82d1e1a8ac8c" executionId="77f648b6-a05d-4cb4-9371-3d613d1665e6" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="56d8c1e6-7452-1570-ea64-355cb78450c5" executionId="821c0ae4-2530-43a3-939d-1953c15cbca5" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="d3ca05b1-93fb-7c95-d6f5-2d1fc75448e2" executionId="ee2e1f8e-d327-4619-bafb-44acbd2d5219" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="bb400699-78e7-7bc9-6905-b8c53305aaad" executionId="6be31d9b-9810-475d-845c-56407fcc88fa" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="82914917-d561-37b4-e25d-e0b16b6f59e8" executionId="fcb27795-a687-40f7-bd7c-495abc53698d" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <TestLists>
+    <TestList name="Results Not in a List" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="All Loaded Results" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <ResultSummary outcome="Completed">
+    <Counters total="30" executed="30" passed="30" failed="0" error="0" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" completed="0" inProgress="0" pending="0" />
+    <Output>
+      <StdOut>[xUnit.net 00:00:00.00] xUnit.net VSTest Adapter v2.8.2+699d445a1a (64-bit .NET 10.0.13)&#xD;
+[xUnit.net 00:00:00.05]   Discovering: Celd.Tests&#xD;
+[xUnit.net 00:00:00.10]   Discovered:  Celd.Tests&#xD;
+[xUnit.net 00:00:00.10]   Starting:    Celd.Tests&#xD;
+[testcontainers.org 00:00:00.09] Connected to Docker:&#xD;
+  Host: npipe://./pipe/docker_engine&#xD;
+  Server Version: 29.9.2&#xD;
+  Kernel Version: 6.18.54.1-microsoft-standard-WSL2&#xD;
+  API Version: 1.56&#xD;
+  Operating System: Docker Desktop&#xD;
+  Total Memory: 31.20 GB&#xD;
+  Labels: &#xD;
+    com.docker.desktop.address=npipe://\\.\pipe\docker_cli&#xD;
+[testcontainers.org 00:00:00.29] Docker container 09ce67296399 created&#xD;
+[testcontainers.org 00:00:00.33] Start Docker container 09ce67296399&#xD;
+[testcontainers.org 00:00:00.53] Wait for Docker container 09ce67296399 to complete readiness checks&#xD;
+[testcontainers.org 00:00:01.57] Docker container 09ce67296399 ready&#xD;
+[testcontainers.org 00:00:01.71] Docker container dbe7ce9d9aee created&#xD;
+[testcontainers.org 00:00:01.72] Start Docker container dbe7ce9d9aee&#xD;
+[testcontainers.org 00:00:01.90] Wait for Docker container dbe7ce9d9aee to complete readiness checks&#xD;
+[testcontainers.org 00:00:01.91] Execute "pg_isready --host localhost --dbname postgres --username postgres" at Docker container dbe7ce9d9aee&#xD;
+[testcontainers.org 00:00:02.96] Execute "pg_isready --host localhost --dbname postgres --username postgres" at Docker container dbe7ce9d9aee&#xD;
+[testcontainers.org 00:00:03.01] Docker container dbe7ce9d9aee ready&#xD;
+info: Seed[0]&#xD;
+      Seeded 7 equipment items.&#xD;
+info: Seed[0]&#xD;
+      Seeded Student account student1.&#xD;
+info: Seed[0]&#xD;
+      Seeded Student account student2.&#xD;
+info: Seed[0]&#xD;
+      Seeded Staff account staff1.&#xD;
+info: Microsoft.Hosting.Lifetime[0]&#xD;
+      Application started. Press Ctrl+C to shut down.&#xD;
+info: Microsoft.Hosting.Lifetime[0]&#xD;
+      Hosting environment: Testing&#xD;
+info: Microsoft.Hosting.Lifetime[0]&#xD;
+      Content root path: C:\COMP3402\celd\server\Celd.Api&#xD;
+info: Microsoft.Hosting.Lifetime[0]&#xD;
+      Application is shutting down...&#xD;
+info: Seed[0]&#xD;
+      Seeded 7 equipment items.&#xD;
+info: Seed[0]&#xD;
+      Seeded Student account student1.&#xD;
+info: Seed[0]&#xD;
+      Seeded Student account student2.&#xD;
+info: Seed[0]&#xD;
+      Seeded Staff account staff1.&#xD;
+info: Microsoft.Hosting.Lifetime[0]&#xD;
+      Application started. Press Ctrl+C to shut down.&#xD;
+info: Microsoft.Hosting.Lifetime[0]&#xD;
+      Hosting environment: Testing&#xD;
+info: Microsoft.Hosting.Lifetime[0]&#xD;
+      Content root path: C:\COMP3402\celd\server\Celd.Api&#xD;
+info: Microsoft.Hosting.Lifetime[0]&#xD;
+      Application is shutting down...&#xD;
+info: Microsoft.Hosting.Lifetime[0]&#xD;
+      Application started. Press Ctrl+C to shut down.&#xD;
+info: Microsoft.Hosting.Lifetime[0]&#xD;
+      Hosting environment: Testing&#xD;
+info: Microsoft.Hosting.Lifetime[0]&#xD;
+      Content root path: C:\COMP3402\celd\server\Celd.Api&#xD;
+info: Microsoft.Hosting.Lifetime[0]&#xD;
+      Application is shutting down...&#xD;
+info: Seed[0]&#xD;
+      Seeded 7 equipment items.&#xD;
+info: Seed[0]&#xD;
+      Seeded Student account student1.&#xD;
+info: Seed[0]&#xD;
+      Seeded Student account student2.&#xD;
+info: Seed[0]&#xD;
+      Seeded Staff account staff1.&#xD;
+info: Microsoft.Hosting.Lifetime[0]&#xD;
+      Application started. Press Ctrl+C to shut down.&#xD;
+info: Microsoft.Hosting.Lifetime[0]&#xD;
+      Hosting environment: Testing&#xD;
+info: Microsoft.Hosting.Lifetime[0]&#xD;
+      Content root path: C:\COMP3402\celd\server\Celd.Api&#xD;
+fail: Microsoft.EntityFrameworkCore.Database.Command[20102]&#xD;
+      Failed executing DbCommand (3ms) [Parameters=[@p0='?' (DbType = Guid), @p1='?' (DbType = DateTime), @p2='?' (DbType = Guid), @p3='?', @p4='?' (DbType = Guid), @p5='?' (DbType = Int32), @p6='?' (DbType = Guid), @p7='?' (DbType = Guid), @p8='?', @p9='?' (DbType = DateTime), @p10='?' (DbType = Guid), @p11='?'], CommandType='Text', CommandTimeout='30']&#xD;
+      INSERT INTO "Reservations" ("Id", "CreatedAtUtc", "EquipmentItemId", "Status", "StudentId", "Version")&#xD;
+      VALUES (@p0, @p1, @p2, @p3, @p4, @p5);&#xD;
+      INSERT INTO "HistoryEvents" ("Id", "ActorId", "EventType", "OccurredAtUtc", "ReservationId", "ResultingStatus")&#xD;
+      VALUES (@p6, @p7, @p8, @p9, @p10, @p11);&#xD;
+fail: Microsoft.EntityFrameworkCore.Update[10000]&#xD;
+      An exception occurred in the database while saving changes for context type 'Celd.Api.Data.CeldDbContext'.&#xD;
+      Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.&#xD;
+       ---&gt; Npgsql.PostgresException (0x80004005): P0001: forced history failure (test)&#xD;
+         at Npgsql.Internal.NpgsqlConnector.ReadMessageLong(Boolean async, DataRowLoadingMode dataRowLoadingMode, Boolean readingNotifications, Boolean isReadingPrependedMessage)&#xD;
+         at System.Runtime.CompilerServices.PoolingAsyncValueTaskMethodBuilder`1.StateMachineBox`1.System.Threading.Tasks.Sources.IValueTaskSource&lt;TResult&gt;.GetResult(Int16 token)&#xD;
+         at Npgsql.NpgsqlDataReader.NextResult(Boolean async, Boolean isConsuming, CancellationToken cancellationToken)&#xD;
+         at Npgsql.NpgsqlDataReader.NextResult(Boolean async, Boolean isConsuming, CancellationToken cancellationToken)&#xD;
+         at Npgsql.NpgsqlCommand.ExecuteReader(Boolean async, CommandBehavior behavior, CancellationToken cancellationToken)&#xD;
+         at Npgsql.NpgsqlCommand.ExecuteReader(Boolean async, CommandBehavior behavior, CancellationToken cancellationToken)&#xD;
+         at Npgsql.NpgsqlCommand.ExecuteDbDataReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)&#xD;
+         at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)&#xD;
+         at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)&#xD;
+         at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)&#xD;
+        Exception data:&#xD;
+          Severity: ERROR&#xD;
+          SqlState: P0001&#xD;
+          MessageText: forced history failure (test)&#xD;
+          Where: PL/pgSQL function celd_test_fail_history() line 2 at RAISE&#xD;
+          File: pl_exec.c&#xD;
+          Line: 3897&#xD;
+          Routine: exec_stmt_raise&#xD;
+         --- End of inner exception stack trace ---&#xD;
+         at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)&#xD;
+         at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)&#xD;
+         at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)&#xD;
+         at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)&#xD;
+         at Microsoft.EntityFrameworkCore.Storage.RelationalDatabase.SaveChangesAsync(IList`1 entries, CancellationToken cancellationToken)&#xD;
+         at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)&#xD;
+         at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)&#xD;
+         at Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)&#xD;
+         at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)&#xD;
+      Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.&#xD;
+       ---&gt; Npgsql.PostgresException (0x80004005): P0001: forced history failure (test)&#xD;
+         at Npgsql.Internal.NpgsqlConnector.ReadMessageLong(Boolean async, DataRowLoadingMode dataRowLoadingMode, Boolean readingNotifications, Boolean isReadingPrependedMessage)&#xD;
+         at System.Runtime.CompilerServices.PoolingAsyncValueTaskMethodBuilder`1.StateMachineBox`1.System.Threading.Tasks.Sources.IValueTaskSource&lt;TResult&gt;.GetResult(Int16 token)&#xD;
+         at Npgsql.NpgsqlDataReader.NextResult(Boolean async, Boolean isConsuming, CancellationToken cancellationToken)&#xD;
+         at Npgsql.NpgsqlDataReader.NextResult(Boolean async, Boolean isConsuming, CancellationToken cancellationToken)&#xD;
+         at Npgsql.NpgsqlCommand.ExecuteReader(Boolean async, CommandBehavior behavior, CancellationToken cancellationToken)&#xD;
+         at Npgsql.NpgsqlCommand.ExecuteReader(Boolean async, CommandBehavior behavior, CancellationToken cancellationToken)&#xD;
+         at Npgsql.NpgsqlCommand.ExecuteDbDataReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)&#xD;
+         at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)&#xD;
+         at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)&#xD;
+         at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)&#xD;
+        Exception data:&#xD;
+          Severity: ERROR&#xD;
+          SqlState: P0001&#xD;
+          MessageText: forced history failure (test)&#xD;
+          Where: PL/pgSQL function celd_test_fail_history() line 2 at RAISE&#xD;
+          File: pl_exec.c&#xD;
+          Line: 3897&#xD;
+          Routine: exec_stmt_raise&#xD;
+         --- End of inner exception stack trace ---&#xD;
+         at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)&#xD;
+         at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)&#xD;
+         at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)&#xD;
+         at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)&#xD;
+         at Microsoft.EntityFrameworkCore.Storage.RelationalDatabase.SaveChangesAsync(IList`1 entries, CancellationToken cancellationToken)&#xD;
+         at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)&#xD;
+         at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)&#xD;
+         at Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)&#xD;
+         at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)&#xD;
+fail: Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddleware[1]&#xD;
+      An unhandled exception has occurred while executing the request.&#xD;
+      Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.&#xD;
+       ---&gt; Npgsql.PostgresException (0x80004005): P0001: forced history failure (test)&#xD;
+         at Npgsql.Internal.NpgsqlConnector.ReadMessageLong(Boolean async, DataRowLoadingMode dataRowLoadingMode, Boolean readingNotifications, Boolean isReadingPrependedMessage)&#xD;
+         at System.Runtime.CompilerServices.PoolingAsyncValueTaskMethodBuilder`1.StateMachineBox`1.System.Threading.Tasks.Sources.IValueTaskSource&lt;TResult&gt;.GetResult(Int16 token)&#xD;
+         at Npgsql.NpgsqlDataReader.NextResult(Boolean async, Boolean isConsuming, CancellationToken cancellationToken)&#xD;
+         at Npgsql.NpgsqlDataReader.NextResult(Boolean async, Boolean isConsuming, CancellationToken cancellationToken)&#xD;
+         at Npgsql.NpgsqlCommand.ExecuteReader(Boolean async, CommandBehavior behavior, CancellationToken cancellationToken)&#xD;
+         at Npgsql.NpgsqlCommand.ExecuteReader(Boolean async, CommandBehavior behavior, CancellationToken cancellationToken)&#xD;
+         at Npgsql.NpgsqlCommand.ExecuteDbDataReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)&#xD;
+         at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)&#xD;
+         at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)&#xD;
+         at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)&#xD;
+        Exception data:&#xD;
+          Severity: ERROR&#xD;
+          SqlState: P0001&#xD;
+          MessageText: forced history failure (test)&#xD;
+          Where: PL/pgSQL function celd_test_fail_history() line 2 at RAISE&#xD;
+          File: pl_exec.c&#xD;
+          Line: 3897&#xD;
+          Routine: exec_stmt_raise&#xD;
+         --- End of inner exception stack trace ---&#xD;
+         at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)&#xD;
+         at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)&#xD;
+         at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)&#xD;
+         at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)&#xD;
+         at Microsoft.EntityFrameworkCore.Storage.RelationalDatabase.SaveChangesAsync(IList`1 entries, CancellationToken cancellationToken)&#xD;
+         at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)&#xD;
+         at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)&#xD;
+         at Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)&#xD;
+         at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)&#xD;
+         at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)&#xD;
+         at Celd.Api.Application.ReservationService.CreateAsync(CurrentUser student, Guid itemId, CancellationToken ct) in C:\COMP3402\celd\server\Celd.Api\Application\ReservationService.cs:line 47&#xD;
+         at Celd.Api.Application.CentralApplicationService.ReserveAsync(Guid itemId, CancellationToken ct) in C:\COMP3402\celd\server\Celd.Api\Application\CentralApplicationService.cs:line 32&#xD;
+         at Celd.Api.Controllers.ReservationsController.Create(CreateReservationRequest request, CancellationToken ct) in C:\COMP3402\celd\server\Celd.Api\Controllers\ReservationsController.cs:line 23&#xD;
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)&#xD;
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.&lt;InvokeActionMethodAsync&gt;g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)&#xD;
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.&lt;InvokeNextActionFilterAsync&gt;g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)&#xD;
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)&#xD;
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State&amp; next, Scope&amp; scope, Object&amp; state, Boolean&amp; isCompleted)&#xD;
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.&lt;InvokeInnerFilterAsync&gt;g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)&#xD;
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.&lt;InvokeFilterPipelineAsync&gt;g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)&#xD;
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.&lt;InvokeAsync&gt;g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)&#xD;
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.&lt;InvokeAsync&gt;g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)&#xD;
+         at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)&#xD;
+         at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)&#xD;
+         at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.&lt;Invoke&gt;g__Awaited|10_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)&#xD;
+info: Microsoft.Hosting.Lifetime[0]&#xD;
+      Application is shutting down...&#xD;
+info: Seed[0]&#xD;
+      Seeded 7 equipment items.&#xD;
+info: Seed[0]&#xD;
+      Seeded Student account student1.&#xD;
+info: Seed[0]&#xD;
+      Seeded Student account student2.&#xD;
+info: Seed[0]&#xD;
+      Seeded Staff account staff1.&#xD;
+info: Microsoft.Hosting.Lifetime[0]&#xD;
+      Application started. Press Ctrl+C to shut down.&#xD;
+info: Microsoft.Hosting.Lifetime[0]&#xD;
+      Hosting environment: Testing&#xD;
+info: Microsoft.Hosting.Lifetime[0]&#xD;
+      Content root path: C:\COMP3402\celd\server\Celd.Api&#xD;
+fail: Microsoft.EntityFrameworkCore.Database.Command[20102]&#xD;
+      Failed executing DbCommand (1ms) [Parameters=[@p0='?' (DbType = Guid), @p1='?' (DbType = Guid), @p2='?', @p3='?' (DbType = DateTime), @p4='?' (DbType = Guid), @p5='?', @p8='?' (DbType = Guid), @p6='?', @p7='?' (DbType = Int32), @p9='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']&#xD;
+      INSERT INTO "HistoryEvents" ("Id", "ActorId", "EventType", "OccurredAtUtc", "ReservationId", "ResultingStatus")&#xD;
+      VALUES (@p0, @p1, @p2, @p3, @p4, @p5);&#xD;
+      UPDATE "Reservations" SET "Status" = @p6, "Version" = @p7&#xD;
+      WHERE "Id" = @p8 AND "Version" = @p9;&#xD;
+fail: Microsoft.EntityFrameworkCore.Update[10000]&#xD;
+      An exception occurred in the database while saving changes for context type 'Celd.Api.Data.CeldDbContext'.&#xD;
+      Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.&#xD;
+       ---&gt; Npgsql.PostgresException (0x80004005): P0001: forced history failure (test)&#xD;
+         at Npgsql.Internal.NpgsqlConnector.ReadMessageLong(Boolean async, DataRowLoadingMode dataRowLoadingMode, Boolean readingNotifications, Boolean isReadingPrependedMessage)&#xD;
+         at System.Runtime.CompilerServices.PoolingAsyncValueTaskMethodBuilder`1.StateMachineBox`1.System.Threading.Tasks.Sources.IValueTaskSource&lt;TResult&gt;.GetResult(Int16 token)&#xD;
+         at Npgsql.NpgsqlDataReader.NextResult(Boolean async, Boolean isConsuming, CancellationToken cancellationToken)&#xD;
+         at Npgsql.NpgsqlDataReader.NextResult(Boolean async, Boolean isConsuming, CancellationToken cancellationToken)&#xD;
+         at Npgsql.NpgsqlCommand.ExecuteReader(Boolean async, CommandBehavior behavior, CancellationToken cancellationToken)&#xD;
+         at Npgsql.NpgsqlCommand.ExecuteReader(Boolean async, CommandBehavior behavior, CancellationToken cancellationToken)&#xD;
+         at Npgsql.NpgsqlCommand.ExecuteDbDataReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)&#xD;
+         at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)&#xD;
+         at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)&#xD;
+         at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)&#xD;
+        Exception data:&#xD;
+          Severity: ERROR&#xD;
+          SqlState: P0001&#xD;
+          MessageText: forced history failure (test)&#xD;
+          Where: PL/pgSQL function celd_test_fail_history() line 2 at RAISE&#xD;
+          File: pl_exec.c&#xD;
+          Line: 3897&#xD;
+          Routine: exec_stmt_raise&#xD;
+         --- End of inner exception stack trace ---&#xD;
+         at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)&#xD;
+         at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)&#xD;
+         at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)&#xD;
+         at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)&#xD;
+         at Microsoft.EntityFrameworkCore.Storage.RelationalDatabase.SaveChangesAsync(IList`1 entries, CancellationToken cancellationToken)&#xD;
+         at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)&#xD;
+         at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)&#xD;
+         at Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)&#xD;
+         at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)&#xD;
+      Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.&#xD;
+       ---&gt; Npgsql.PostgresException (0x80004005): P0001: forced history failure (test)&#xD;
+         at Npgsql.Internal.NpgsqlConnector.ReadMessageLong(Boolean async, DataRowLoadingMode dataRowLoadingMode, Boolean readingNotifications, Boolean isReadingPrependedMessage)&#xD;
+         at System.Runtime.CompilerServices.PoolingAsyncValueTaskMethodBuilder`1.StateMachineBox`1.System.Threading.Tasks.Sources.IValueTaskSource&lt;TResult&gt;.GetResult(Int16 token)&#xD;
+         at Npgsql.NpgsqlDataReader.NextResult(Boolean async, Boolean isConsuming, CancellationToken cancellationToken)&#xD;
+         at Npgsql.NpgsqlDataReader.NextResult(Boolean async, Boolean isConsuming, CancellationToken cancellationToken)&#xD;
+         at Npgsql.NpgsqlCommand.ExecuteReader(Boolean async, CommandBehavior behavior, CancellationToken cancellationToken)&#xD;
+         at Npgsql.NpgsqlCommand.ExecuteReader(Boolean async, CommandBehavior behavior, CancellationToken cancellationToken)&#xD;
+         at Npgsql.NpgsqlCommand.ExecuteDbDataReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)&#xD;
+         at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)&#xD;
+         at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)&#xD;
+         at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)&#xD;
+        Exception data:&#xD;
+          Severity: ERROR&#xD;
+          SqlState: P0001&#xD;
+          MessageText: forced history failure (test)&#xD;
+          Where: PL/pgSQL function celd_test_fail_history() line 2 at RAISE&#xD;
+          File: pl_exec.c&#xD;
+          Line: 3897&#xD;
+          Routine: exec_stmt_raise&#xD;
+         --- End of inner exception stack trace ---&#xD;
+         at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)&#xD;
+         at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)&#xD;
+         at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)&#xD;
+         at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)&#xD;
+         at Microsoft.EntityFrameworkCore.Storage.RelationalDatabase.SaveChangesAsync(IList`1 entries, CancellationToken cancellationToken)&#xD;
+         at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)&#xD;
+         at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)&#xD;
+         at Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)&#xD;
+         at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)&#xD;
+fail: Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddleware[1]&#xD;
+      An unhandled exception has occurred while executing the request.&#xD;
+      Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.&#xD;
+       ---&gt; Npgsql.PostgresException (0x80004005): P0001: forced history failure (test)&#xD;
+         at Npgsql.Internal.NpgsqlConnector.ReadMessageLong(Boolean async, DataRowLoadingMode dataRowLoadingMode, Boolean readingNotifications, Boolean isReadingPrependedMessage)&#xD;
+         at System.Runtime.CompilerServices.PoolingAsyncValueTaskMethodBuilder`1.StateMachineBox`1.System.Threading.Tasks.Sources.IValueTaskSource&lt;TResult&gt;.GetResult(Int16 token)&#xD;
+         at Npgsql.NpgsqlDataReader.NextResult(Boolean async, Boolean isConsuming, CancellationToken cancellationToken)&#xD;
+         at Npgsql.NpgsqlDataReader.NextResult(Boolean async, Boolean isConsuming, CancellationToken cancellationToken)&#xD;
+         at Npgsql.NpgsqlCommand.ExecuteReader(Boolean async, CommandBehavior behavior, CancellationToken cancellationToken)&#xD;
+         at Npgsql.NpgsqlCommand.ExecuteReader(Boolean async, CommandBehavior behavior, CancellationToken cancellationToken)&#xD;
+         at Npgsql.NpgsqlCommand.ExecuteDbDataReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)&#xD;
+         at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)&#xD;
+         at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)&#xD;
+         at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)&#xD;
+        Exception data:&#xD;
+          Severity: ERROR&#xD;
+          SqlState: P0001&#xD;
+          MessageText: forced history failure (test)&#xD;
+          Where: PL/pgSQL function celd_test_fail_history() line 2 at RAISE&#xD;
+          File: pl_exec.c&#xD;
+          Line: 3897&#xD;
+          Routine: exec_stmt_raise&#xD;
+         --- End of inner exception stack trace ---&#xD;
+         at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)&#xD;
+         at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)&#xD;
+         at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)&#xD;
+         at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)&#xD;
+         at Microsoft.EntityFrameworkCore.Storage.RelationalDatabase.SaveChangesAsync(IList`1 entries, CancellationToken cancellationToken)&#xD;
+         at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)&#xD;
+         at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)&#xD;
+         at Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)&#xD;
+         at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)&#xD;
+         at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)&#xD;
+         at Celd.Api.Application.ReservationService.TransitionAsync(CurrentUser actor, Guid reservationId, LifecycleAction action, CancellationToken ct) in C:\COMP3402\celd\server\Celd.Api\Application\ReservationService.cs:line 119&#xD;
+         at Celd.Api.Application.CentralApplicationService.RecordPickupAsync(Guid reservationId, CancellationToken ct) in C:\COMP3402\celd\server\Celd.Api\Application\CentralApplicationService.cs:line 59&#xD;
+         at Celd.Api.Controllers.ReservationsController.Pickup(Guid id, CancellationToken ct) in C:\COMP3402\celd\server\Celd.Api\Controllers\ReservationsController.cs:line 49&#xD;
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)&#xD;
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.&lt;InvokeActionMethodAsync&gt;g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)&#xD;
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.&lt;InvokeNextActionFilterAsync&gt;g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)&#xD;
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)&#xD;
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State&amp; next, Scope&amp; scope, Object&amp; state, Boolean&amp; isCompleted)&#xD;
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.&lt;InvokeInnerFilterAsync&gt;g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)&#xD;
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.&lt;InvokeFilterPipelineAsync&gt;g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)&#xD;
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.&lt;InvokeAsync&gt;g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)&#xD;
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.&lt;InvokeAsync&gt;g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)&#xD;
+         at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)&#xD;
+         at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)&#xD;
+         at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.&lt;Invoke&gt;g__Awaited|10_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)&#xD;
+info: Microsoft.Hosting.Lifetime[0]&#xD;
+      Application is shutting down...&#xD;
+info: Seed[0]&#xD;
+      Seeded 7 equipment items.&#xD;
+info: Seed[0]&#xD;
+      Seeded Student account student1.&#xD;
+info: Seed[0]&#xD;
+      Seeded Student account student2.&#xD;
+info: Seed[0]&#xD;
+      Seeded Staff account staff1.&#xD;
+info: Microsoft.Hosting.Lifetime[0]&#xD;
+      Application started. Press Ctrl+C to shut down.&#xD;
+info: Microsoft.Hosting.Lifetime[0]&#xD;
+      Hosting environment: Testing&#xD;
+info: Microsoft.Hosting.Lifetime[0]&#xD;
+      Content root path: C:\COMP3402\celd\server\Celd.Api&#xD;
+info: Microsoft.Hosting.Lifetime[0]&#xD;
+      Application is shutting down...&#xD;
+info: Seed[0]&#xD;
+      Seeded 7 equipment items.&#xD;
+info: Seed[0]&#xD;
+      Seeded Student account student1.&#xD;
+info: Seed[0]&#xD;
+      Seeded Student account student2.&#xD;
+info: Seed[0]&#xD;
+      Seeded Staff account staff1.&#xD;
+info: Microsoft.Hosting.Lifetime[0]&#xD;
+      Application started. Press Ctrl+C to shut down.&#xD;
+info: Microsoft.Hosting.Lifetime[0]&#xD;
+      Hosting environment: Testing&#xD;
+info: Microsoft.Hosting.Lifetime[0]&#xD;
+      Content root path: C:\COMP3402\celd\server\Celd.Api&#xD;
+info: Microsoft.Hosting.Lifetime[0]&#xD;
+      Application is shutting down...&#xD;
+info: Seed[0]&#xD;
+      Seeded 7 equipment items.&#xD;
+info: Seed[0]&#xD;
+      Seeded Student account student1.&#xD;
+info: Seed[0]&#xD;
+      Seeded Student account student2.&#xD;
+info: Seed[0]&#xD;
+      Seeded Staff account staff1.&#xD;
+info: Microsoft.Hosting.Lifetime[0]&#xD;
+      Application started. Press Ctrl+C to shut down.&#xD;
+info: Microsoft.Hosting.Lifetime[0]&#xD;
+      Hosting environment: Testing&#xD;
+info: Microsoft.Hosting.Lifetime[0]&#xD;
+      Content root path: C:\COMP3402\celd\server\Celd.Api&#xD;
+info: Microsoft.Hosting.Lifetime[0]&#xD;
+      Application is shutting down...&#xD;
+info: Seed[0]&#xD;
+      Seeded 7 equipment items.&#xD;
+info: Seed[0]&#xD;
+      Seeded Student account student1.&#xD;
+info: Seed[0]&#xD;
+      Seeded Student account student2.&#xD;
+info: Seed[0]&#xD;
+      Seeded Staff account staff1.&#xD;
+info: Microsoft.Hosting.Lifetime[0]&#xD;
+      Application started. Press Ctrl+C to shut down.&#xD;
+info: Microsoft.Hosting.Lifetime[0]&#xD;
+      Hosting environment: Testing&#xD;
+info: Microsoft.Hosting.Lifetime[0]&#xD;
+      Content root path: C:\COMP3402\celd\server\Celd.Api&#xD;
+info: Microsoft.Hosting.Lifetime[0]&#xD;
+      Application is shutting down...&#xD;
+info: Seed[0]&#xD;
+      Seeded 7 equipment items.&#xD;
+info: Seed[0]&#xD;
+      Seeded Student account student1.&#xD;
+info: Seed[0]&#xD;
+      Seeded Student account student2.&#xD;
+info: Seed[0]&#xD;
+      Seeded Staff account staff1.&#xD;
+info: Microsoft.Hosting.Lifetime[0]&#xD;
+      Application started. Press Ctrl+C to shut down.&#xD;
+info: Microsoft.Hosting.Lifetime[0]&#xD;
+      Hosting environment: Testing&#xD;
+info: Microsoft.Hosting.Lifetime[0]&#xD;
+      Content root path: C:\COMP3402\celd\server\Celd.Api&#xD;
+info: Microsoft.Hosting.Lifetime[0]&#xD;
+      Application is shutting down...&#xD;
+info: Seed[0]&#xD;
+      Seeded 7 equipment items.&#xD;
+info: Seed[0]&#xD;
+      Seeded Student account student1.&#xD;
+info: Seed[0]&#xD;
+      Seeded Student account student2.&#xD;
+info: Seed[0]&#xD;
+      Seeded Staff account staff1.&#xD;
+info: Microsoft.Hosting.Lifetime[0]&#xD;
+      Application started. Press Ctrl+C to shut down.&#xD;
+info: Microsoft.Hosting.Lifetime[0]&#xD;
+      Hosting environment: Testing&#xD;
+info: Microsoft.Hosting.Lifetime[0]&#xD;
+      Content root path: C:\COMP3402\celd\server\Celd.Api&#xD;
+info: Microsoft.Hosting.Lifetime[0]&#xD;
+      Application is shutting down...&#xD;
+info: Seed[0]&#xD;
+      Seeded 7 equipment items.&#xD;
+info: Seed[0]&#xD;
+      Seeded Student account student1.&#xD;
+info: Seed[0]&#xD;
+      Seeded Student account student2.&#xD;
+info: Seed[0]&#xD;
+      Seeded Staff account staff1.&#xD;
+info: Microsoft.Hosting.Lifetime[0]&#xD;
+      Application started. Press Ctrl+C to shut down.&#xD;
+info: Microsoft.Hosting.Lifetime[0]&#xD;
+      Hosting environment: Testing&#xD;
+info: Microsoft.Hosting.Lifetime[0]&#xD;
+      Content root path: C:\COMP3402\celd\server\Celd.Api&#xD;
+info: Microsoft.Hosting.Lifetime[0]&#xD;
+      Application is shutting down...&#xD;
+info: Seed[0]&#xD;
+      Seeded 7 equipment items.&#xD;
+info: Seed[0]&#xD;
+      Seeded Student account student1.&#xD;
+info: Seed[0]&#xD;
+      Seeded Student account student2.&#xD;
+info: Seed[0]&#xD;
+      Seeded Staff account staff1.&#xD;
+info: Microsoft.Hosting.Lifetime[0]&#xD;
+      Application started. Press Ctrl+C to shut down.&#xD;
+info: Microsoft.Hosting.Lifetime[0]&#xD;
+      Hosting environment: Testing&#xD;
+info: Microsoft.Hosting.Lifetime[0]&#xD;
+      Content root path: C:\COMP3402\celd\server\Celd.Api&#xD;
+info: Microsoft.Hosting.Lifetime[0]&#xD;
+      Application is shutting down...&#xD;
+info: Seed[0]&#xD;
+      Seeded 7 equipment items.&#xD;
+info: Seed[0]&#xD;
+      Seeded Student account student1.&#xD;
+info: Seed[0]&#xD;
+      Seeded Student account student2.&#xD;
+info: Seed[0]&#xD;
+      Seeded Staff account staff1.&#xD;
+info: Microsoft.Hosting.Lifetime[0]&#xD;
+      Application started. Press Ctrl+C to shut down.&#xD;
+info: Microsoft.Hosting.Lifetime[0]&#xD;
+      Hosting environment: Testing&#xD;
+info: Microsoft.Hosting.Lifetime[0]&#xD;
+      Content root path: C:\COMP3402\celd\server\Celd.Api&#xD;
+info: Microsoft.Hosting.Lifetime[0]&#xD;
+      Application is shutting down...&#xD;
+info: Seed[0]&#xD;
+      Seeded 7 equipment items.&#xD;
+info: Seed[0]&#xD;
+      Seeded Student account student1.&#xD;
+info: Seed[0]&#xD;
+      Seeded Student account student2.&#xD;
+info: Seed[0]&#xD;
+      Seeded Staff account staff1.&#xD;
+info: Microsoft.Hosting.Lifetime[0]&#xD;
+      Application started. Press Ctrl+C to shut down.&#xD;
+info: Microsoft.Hosting.Lifetime[0]&#xD;
+      Hosting environment: Testing&#xD;
+info: Microsoft.Hosting.Lifetime[0]&#xD;
+      Content root path: C:\COMP3402\celd\server\Celd.Api&#xD;
+warn: Microsoft.AspNetCore.Antiforgery.DefaultAntiforgery[4]&#xD;
+      The required antiforgery request token was not provided in either form field '__RequestVerificationToken' or header 'X-CSRF-TOKEN'.&#xD;
+info: Microsoft.Hosting.Lifetime[0]&#xD;
+      Application is shutting down...&#xD;
+info: Seed[0]&#xD;
+      Seeded 7 equipment items.&#xD;
+info: Seed[0]&#xD;
+      Seeded Student account student1.&#xD;
+info: Seed[0]&#xD;
+      Seeded Student account student2.&#xD;
+info: Seed[0]&#xD;
+      Seeded Staff account staff1.&#xD;
+info: Microsoft.Hosting.Lifetime[0]&#xD;
+      Application started. Press Ctrl+C to shut down.&#xD;
+info: Microsoft.Hosting.Lifetime[0]&#xD;
+      Hosting environment: Testing&#xD;
+info: Microsoft.Hosting.Lifetime[0]&#xD;
+      Content root path: C:\COMP3402\celd\server\Celd.Api&#xD;
+info: Microsoft.Hosting.Lifetime[0]&#xD;
+      Application is shutting down...&#xD;
+info: Seed[0]&#xD;
+      Seeded 7 equipment items.&#xD;
+info: Seed[0]&#xD;
+      Seeded Student account student1.&#xD;
+info: Seed[0]&#xD;
+      Seeded Student account student2.&#xD;
+info: Seed[0]&#xD;
+      Seeded Staff account staff1.&#xD;
+info: Microsoft.Hosting.Lifetime[0]&#xD;
+      Application started. Press Ctrl+C to shut down.&#xD;
+info: Microsoft.Hosting.Lifetime[0]&#xD;
+      Hosting environment: Testing&#xD;
+info: Microsoft.Hosting.Lifetime[0]&#xD;
+      Content root path: C:\COMP3402\celd\server\Celd.Api&#xD;
+info: Microsoft.Hosting.Lifetime[0]&#xD;
+      Application is shutting down...&#xD;
+info: Seed[0]&#xD;
+      Seeded 7 equipment items.&#xD;
+info: Seed[0]&#xD;
+      Seeded Student account student1.&#xD;
+info: Seed[0]&#xD;
+      Seeded Student account student2.&#xD;
+info: Seed[0]&#xD;
+      Seeded Staff account staff1.&#xD;
+info: Microsoft.Hosting.Lifetime[0]&#xD;
+      Application started. Press Ctrl+C to shut down.&#xD;
+info: Microsoft.Hosting.Lifetime[0]&#xD;
+      Hosting environment: Testing&#xD;
+info: Microsoft.Hosting.Lifetime[0]&#xD;
+      Content root path: C:\COMP3402\celd\server\Celd.Api&#xD;
+info: Microsoft.Hosting.Lifetime[0]&#xD;
+      Application is shutting down...&#xD;
+info: Seed[0]&#xD;
+      Seeded 7 equipment items.&#xD;
+info: Seed[0]&#xD;
+      Seeded Student account student1.&#xD;
+info: Seed[0]&#xD;
+      Seeded Student account student2.&#xD;
+info: Seed[0]&#xD;
+      Seeded Staff account staff1.&#xD;
+info: Microsoft.Hosting.Lifetime[0]&#xD;
+      Application started. Press Ctrl+C to shut down.&#xD;
+info: Microsoft.Hosting.Lifetime[0]&#xD;
+      Hosting environment: Testing&#xD;
+info: Microsoft.Hosting.Lifetime[0]&#xD;
+      Content root path: C:\COMP3402\celd\server\Celd.Api&#xD;
+info: Microsoft.Hosting.Lifetime[0]&#xD;
+      Application is shutting down...&#xD;
+info: Seed[0]&#xD;
+      Seeded 7 equipment items.&#xD;
+info: Seed[0]&#xD;
+      Seeded Student account student1.&#xD;
+info: Seed[0]&#xD;
+      Seeded Student account student2.&#xD;
+info: Seed[0]&#xD;
+      Seeded Staff account staff1.&#xD;
+info: Microsoft.Hosting.Lifetime[0]&#xD;
+      Application started. Press Ctrl+C to shut down.&#xD;
+info: Microsoft.Hosting.Lifetime[0]&#xD;
+      Hosting environment: Testing&#xD;
+info: Microsoft.Hosting.Lifetime[0]&#xD;
+      Content root path: C:\COMP3402\celd\server\Celd.Api&#xD;
+info: Microsoft.Hosting.Lifetime[0]&#xD;
+      Application is shutting down...&#xD;
+info: Seed[0]&#xD;
+      Seeded 7 equipment items.&#xD;
+info: Seed[0]&#xD;
+      Seeded Student account student1.&#xD;
+info: Seed[0]&#xD;
+      Seeded Student account student2.&#xD;
+info: Seed[0]&#xD;
+      Seeded Staff account staff1.&#xD;
+info: Microsoft.Hosting.Lifetime[0]&#xD;
+      Application started. Press Ctrl+C to shut down.&#xD;
+info: Microsoft.Hosting.Lifetime[0]&#xD;
+      Hosting environment: Testing&#xD;
+info: Microsoft.Hosting.Lifetime[0]&#xD;
+      Content root path: C:\COMP3402\celd\server\Celd.Api&#xD;
+fail: Microsoft.EntityFrameworkCore.Database.Command[20102]&#xD;
+      Failed executing DbCommand (1ms) [Parameters=[@p0='?' (DbType = Guid), @p1='?' (DbType = DateTime), @p2='?' (DbType = Guid), @p3='?', @p4='?' (DbType = Guid), @p5='?' (DbType = Int32), @p6='?' (DbType = Guid), @p7='?' (DbType = Guid), @p8='?', @p9='?' (DbType = DateTime), @p10='?' (DbType = Guid), @p11='?'], CommandType='Text', CommandTimeout='30']&#xD;
+      INSERT INTO "Reservations" ("Id", "CreatedAtUtc", "EquipmentItemId", "Status", "StudentId", "Version")&#xD;
+      VALUES (@p0, @p1, @p2, @p3, @p4, @p5);&#xD;
+      INSERT INTO "HistoryEvents" ("Id", "ActorId", "EventType", "OccurredAtUtc", "ReservationId", "ResultingStatus")&#xD;
+      VALUES (@p6, @p7, @p8, @p9, @p10, @p11);&#xD;
+fail: Microsoft.EntityFrameworkCore.Update[10000]&#xD;
+      An exception occurred in the database while saving changes for context type 'Celd.Api.Data.CeldDbContext'.&#xD;
+      Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.&#xD;
+       ---&gt; Npgsql.PostgresException (0x80004005): 23505: duplicate key value violates unique constraint "IX_Reservations_OneActivePerItem"&#xD;
+      DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.&#xD;
+         at Npgsql.Internal.NpgsqlConnector.ReadMessageLong(Boolean async, DataRowLoadingMode dataRowLoadingMode, Boolean readingNotifications, Boolean isReadingPrependedMessage)&#xD;
+         at System.Runtime.CompilerServices.PoolingAsyncValueTaskMethodBuilder`1.StateMachineBox`1.System.Threading.Tasks.Sources.IValueTaskSource&lt;TResult&gt;.GetResult(Int16 token)&#xD;
+         at Npgsql.NpgsqlDataReader.NextResult(Boolean async, Boolean isConsuming, CancellationToken cancellationToken)&#xD;
+         at Npgsql.NpgsqlDataReader.NextResult(Boolean async, Boolean isConsuming, CancellationToken cancellationToken)&#xD;
+         at Npgsql.NpgsqlCommand.ExecuteReader(Boolean async, CommandBehavior behavior, CancellationToken cancellationToken)&#xD;
+         at Npgsql.NpgsqlCommand.ExecuteReader(Boolean async, CommandBehavior behavior, CancellationToken cancellationToken)&#xD;
+         at Npgsql.NpgsqlCommand.ExecuteDbDataReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)&#xD;
+         at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)&#xD;
+         at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)&#xD;
+         at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)&#xD;
+        Exception data:&#xD;
+          Severity: ERROR&#xD;
+          SqlState: 23505&#xD;
+          MessageText: duplicate key value violates unique constraint "IX_Reservations_OneActivePerItem"&#xD;
+          Detail: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.&#xD;
+          SchemaName: public&#xD;
+          TableName: Reservations&#xD;
+          ConstraintName: IX_Reservations_OneActivePerItem&#xD;
+          File: nbtinsert.c&#xD;
+          Line: 666&#xD;
+          Routine: _bt_check_unique&#xD;
+         --- End of inner exception stack trace ---&#xD;
+         at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)&#xD;
+         at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)&#xD;
+         at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)&#xD;
+         at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)&#xD;
+         at Microsoft.EntityFrameworkCore.Storage.RelationalDatabase.SaveChangesAsync(IList`1 entries, CancellationToken cancellationToken)&#xD;
+         at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)&#xD;
+         at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)&#xD;
+         at Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)&#xD;
+         at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)&#xD;
+      Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.&#xD;
+       ---&gt; Npgsql.PostgresException (0x80004005): 23505: duplicate key value violates unique constraint "IX_Reservations_OneActivePerItem"&#xD;
+      DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.&#xD;
+         at Npgsql.Internal.NpgsqlConnector.ReadMessageLong(Boolean async, DataRowLoadingMode dataRowLoadingMode, Boolean readingNotifications, Boolean isReadingPrependedMessage)&#xD;
+         at System.Runtime.CompilerServices.PoolingAsyncValueTaskMethodBuilder`1.StateMachineBox`1.System.Threading.Tasks.Sources.IValueTaskSource&lt;TResult&gt;.GetResult(Int16 token)&#xD;
+         at Npgsql.NpgsqlDataReader.NextResult(Boolean async, Boolean isConsuming, CancellationToken cancellationToken)&#xD;
+         at Npgsql.NpgsqlDataReader.NextResult(Boolean async, Boolean isConsuming, CancellationToken cancellationToken)&#xD;
+         at Npgsql.NpgsqlCommand.ExecuteReader(Boolean async, CommandBehavior behavior, CancellationToken cancellationToken)&#xD;
+         at Npgsql.NpgsqlCommand.ExecuteReader(Boolean async, CommandBehavior behavior, CancellationToken cancellationToken)&#xD;
+         at Npgsql.NpgsqlCommand.ExecuteDbDataReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)&#xD;
+         at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)&#xD;
+         at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)&#xD;
+         at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)&#xD;
+        Exception data:&#xD;
+          Severity: ERROR&#xD;
+          SqlState: 23505&#xD;
+          MessageText: duplicate key value violates unique constraint "IX_Reservations_OneActivePerItem"&#xD;
+          Detail: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.&#xD;
+          SchemaName: public&#xD;
+          TableName: Reservations&#xD;
+          ConstraintName: IX_Reservations_OneActivePerItem&#xD;
+          File: nbtinsert.c&#xD;
+          Line: 666&#xD;
+          Routine: _bt_check_unique&#xD;
+         --- End of inner exception stack trace ---&#xD;
+         at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)&#xD;
+         at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)&#xD;
+         at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)&#xD;
+         at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)&#xD;
+         at Microsoft.EntityFrameworkCore.Storage.RelationalDatabase.SaveChangesAsync(IList`1 entries, CancellationToken cancellationToken)&#xD;
+         at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)&#xD;
+         at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)&#xD;
+         at Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)&#xD;
+         at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)&#xD;
+info: Microsoft.Hosting.Lifetime[0]&#xD;
+      Application is shutting down...&#xD;
+info: Seed[0]&#xD;
+      Seeded 7 equipment items.&#xD;
+info: Seed[0]&#xD;
+      Seeded Student account student1.&#xD;
+info: Seed[0]&#xD;
+      Seeded Student account student2.&#xD;
+info: Seed[0]&#xD;
+      Seeded Staff account staff1.&#xD;
+info: Microsoft.Hosting.Lifetime[0]&#xD;
+      Application started. Press Ctrl+C to shut down.&#xD;
+info: Microsoft.Hosting.Lifetime[0]&#xD;
+      Hosting environment: Testing&#xD;
+info: Microsoft.Hosting.Lifetime[0]&#xD;
+      Content root path: C:\COMP3402\celd\server\Celd.Api&#xD;
+info: Microsoft.Hosting.Lifetime[0]&#xD;
+      Application is shutting down...&#xD;
+info: Seed[0]&#xD;
+      Seeded 7 equipment items.&#xD;
+info: Seed[0]&#xD;
+      Seeded Student account student1.&#xD;
+info: Seed[0]&#xD;
+      Seeded Student account student2.&#xD;
+info: Seed[0]&#xD;
+      Seeded Staff account staff1.&#xD;
+info: Microsoft.Hosting.Lifetime[0]&#xD;
+      Application started. Press Ctrl+C to shut down.&#xD;
+info: Microsoft.Hosting.Lifetime[0]&#xD;
+      Hosting environment: Testing&#xD;
+info: Microsoft.Hosting.Lifetime[0]&#xD;
+      Content root path: C:\COMP3402\celd\server\Celd.Api&#xD;
+info: Microsoft.Hosting.Lifetime[0]&#xD;
+      Application is shutting down...&#xD;
+info: Seed[0]&#xD;
+      Seeded 7 equipment items.&#xD;
+info: Seed[0]&#xD;
+      Seeded Student account student1.&#xD;
+info: Seed[0]&#xD;
+      Seeded Student account student2.&#xD;
+info: Seed[0]&#xD;
+      Seeded Staff account staff1.&#xD;
+info: Microsoft.Hosting.Lifetime[0]&#xD;
+      Application started. Press Ctrl+C to shut down.&#xD;
+info: Microsoft.Hosting.Lifetime[0]&#xD;
+      Hosting environment: Testing&#xD;
+info: Microsoft.Hosting.Lifetime[0]&#xD;
+      Content root path: C:\COMP3402\celd\server\Celd.Api&#xD;
+info: Microsoft.Hosting.Lifetime[0]&#xD;
+      Application is shutting down...&#xD;
+info: Seed[0]&#xD;
+      Seeded 7 equipment items.&#xD;
+info: Seed[0]&#xD;
+      Seeded Student account student1.&#xD;
+info: Seed[0]&#xD;
+      Seeded Student account student2.&#xD;
+info: Seed[0]&#xD;
+      Seeded Staff account staff1.&#xD;
+info: Microsoft.Hosting.Lifetime[0]&#xD;
+      Application started. Press Ctrl+C to shut down.&#xD;
+info: Microsoft.Hosting.Lifetime[0]&#xD;
+      Hosting environment: Testing&#xD;
+info: Microsoft.Hosting.Lifetime[0]&#xD;
+      Content root path: C:\COMP3402\celd\server\Celd.Api&#xD;
+info: Microsoft.Hosting.Lifetime[0]&#xD;
+      Application is shutting down...&#xD;
+info: Seed[0]&#xD;
+      Seeded 7 equipment items.&#xD;
+info: Seed[0]&#xD;
+      Seeded Student account student1.&#xD;
+info: Seed[0]&#xD;
+      Seeded Student account student2.&#xD;
+info: Seed[0]&#xD;
+      Seeded Staff account staff1.&#xD;
+info: Microsoft.Hosting.Lifetime[0]&#xD;
+      Application started. Press Ctrl+C to shut down.&#xD;
+info: Microsoft.Hosting.Lifetime[0]&#xD;
+      Hosting environment: Testing&#xD;
+info: Microsoft.Hosting.Lifetime[0]&#xD;
+      Content root path: C:\COMP3402\celd\server\Celd.Api&#xD;
+info: Microsoft.Hosting.Lifetime[0]&#xD;
+      Application is shutting down...&#xD;
+info: Seed[0]&#xD;
+      Seeded 7 equipment items.&#xD;
+info: Seed[0]&#xD;
+      Seeded Student account student1.&#xD;
+info: Seed[0]&#xD;
+      Seeded Student account student2.&#xD;
+info: Seed[0]&#xD;
+      Seeded Staff account staff1.&#xD;
+info: Microsoft.Hosting.Lifetime[0]&#xD;
+      Application started. Press Ctrl+C to shut down.&#xD;
+info: Microsoft.Hosting.Lifetime[0]&#xD;
+      Hosting environment: Testing&#xD;
+info: Microsoft.Hosting.Lifetime[0]&#xD;
+      Content root path: C:\COMP3402\celd\server\Celd.Api&#xD;
+info: Microsoft.Hosting.Lifetime[0]&#xD;
+      Application is shutting down...&#xD;
+info: Seed[0]&#xD;
+      Seeded 7 equipment items.&#xD;
+info: Seed[0]&#xD;
+      Seeded Student account student1.&#xD;
+info: Seed[0]&#xD;
+      Seeded Student account student2.&#xD;
+info: Seed[0]&#xD;
+      Seeded Staff account staff1.&#xD;
+info: Microsoft.Hosting.Lifetime[0]&#xD;
+      Application started. Press Ctrl+C to shut down.&#xD;
+info: Microsoft.Hosting.Lifetime[0]&#xD;
+      Hosting environment: Testing&#xD;
+info: Microsoft.Hosting.Lifetime[0]&#xD;
+      Content root path: C:\COMP3402\celd\server\Celd.Api&#xD;
+info: Microsoft.Hosting.Lifetime[0]&#xD;
+      Application is shutting down...&#xD;
+info: Seed[0]&#xD;
+      Seeded 7 equipment items.&#xD;
+info: Seed[0]&#xD;
+      Seeded Student account student1.&#xD;
+info: Seed[0]&#xD;
+      Seeded Student account student2.&#xD;
+info: Seed[0]&#xD;
+      Seeded Staff account staff1.&#xD;
+info: Microsoft.Hosting.Lifetime[0]&#xD;
+      Application started. Press Ctrl+C to shut down.&#xD;
+info: Microsoft.Hosting.Lifetime[0]&#xD;
+      Hosting environment: Testing&#xD;
+info: Microsoft.Hosting.Lifetime[0]&#xD;
+      Content root path: C:\COMP3402\celd\server\Celd.Api&#xD;
+info: Microsoft.Hosting.Lifetime[0]&#xD;
+      Application is shutting down...&#xD;
+info: Seed[0]&#xD;
+      Seeded 7 equipment items.&#xD;
+info: Seed[0]&#xD;
+      Seeded Student account student1.&#xD;
+info: Seed[0]&#xD;
+      Seeded Student account student2.&#xD;
+info: Seed[0]&#xD;
+      Seeded Staff account staff1.&#xD;
+info: Microsoft.Hosting.Lifetime[0]&#xD;
+      Application started. Press Ctrl+C to shut down.&#xD;
+info: Microsoft.Hosting.Lifetime[0]&#xD;
+      Hosting environment: Testing&#xD;
+info: Microsoft.Hosting.Lifetime[0]&#xD;
+      Content root path: C:\COMP3402\celd\server\Celd.Api&#xD;
+info: Microsoft.Hosting.Lifetime[0]&#xD;
+      Application is shutting down...&#xD;
+info: Seed[0]&#xD;
+      Seeded 7 equipment items.&#xD;
+info: Seed[0]&#xD;
+      Seeded Student account student1.&#xD;
+info: Seed[0]&#xD;
+      Seeded Student account student2.&#xD;
+info: Seed[0]&#xD;
+      Seeded Staff account staff1.&#xD;
+info: Microsoft.Hosting.Lifetime[0]&#xD;
+      Application started. Press Ctrl+C to shut down.&#xD;
+info: Microsoft.Hosting.Lifetime[0]&#xD;
+      Hosting environment: Testing&#xD;
+info: Microsoft.Hosting.Lifetime[0]&#xD;
+      Content root path: C:\COMP3402\celd\server\Celd.Api&#xD;
+info: Microsoft.Hosting.Lifetime[0]&#xD;
+      Application is shutting down...&#xD;
+[testcontainers.org 00:00:14.41] Delete Docker container dbe7ce9d9aee&#xD;
+[xUnit.net 00:00:17.53]   Finished:    Celd.Tests&#xD;
+</StdOut>
+    </Output>
+  </ResultSummary>
+</TestRun>

@@ -25,8 +25,9 @@ export function LoginPage({ onSignedIn }: { onSignedIn: (user: CurrentUser) => v
   };
 
   return (
-    <section aria-labelledby="login-title" className="narrow">
+    <section aria-labelledby="login-title" className="narrow card login-card">
       <h1 id="login-title">Sign in</h1>
+      <p className="muted">Use the account given to you by the lending desk.</p>
       {error && <Notice kind="error">{error}</Notice>}
       <form onSubmit={submit} className="stack">
         <label>

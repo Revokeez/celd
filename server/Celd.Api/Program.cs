@@ -7,6 +7,7 @@ using Celd.Api.Http;
 using Microsoft.AspNetCore.Authentication.Cookies;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.Infrastructure;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Diagnostics;
 
@@ -61,8 +62,12 @@ builder.Services.AddScoped<ReservationService>();
 builder.Services.AddScoped<CentralApplicationService>();
 
 // ---- API Controllers ---------------------------------------------------------------------------
+// [AutoValidateAntiforgeryToken]'s filter lives in MVC's view-features services, which AddControllers() omits.
+builder.Services.AddMvcCore().AddViews();
+// CSRF is enforced by [AutoValidateAntiforgeryToken] on the controllers; this only formats its failures as csrf_failed.
+builder.Services.AddSingleton<IClientErrorFactory, CeldClientErrorFactory>();
 builder.Services
-    .AddControllers(options => options.Filters.Add<CsrfProtectionFilter>())
+    .AddControllers()
     .AddJsonOptions(o => o.JsonSerializerOptions.Converters.Add(new JsonStringEnumConverter()))
     .ConfigureApiBehaviorOptions(options =>
     {

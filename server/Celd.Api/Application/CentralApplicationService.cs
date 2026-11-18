@@ -14,8 +14,9 @@ public sealed class CentralApplicationService(
     ReservationService reservations)
 {
     // UC-001: public, no session required.
-    public Task<IReadOnlyList<EquipmentSummaryDto>> ListEquipmentAsync(string? search, string? category, CancellationToken ct) =>
-        equipment.ListAsync(search, category, ct);
+    public Task<PagedResult<EquipmentSummaryDto>> ListEquipmentAsync(
+        string? search, string? category, bool availableOnly, int? page, int? pageSize, CancellationToken ct) =>
+        equipment.ListAsync(search, category, availableOnly, page, pageSize, ct);
 
     public Task<IReadOnlyList<string>> ListCategoriesAsync(CancellationToken ct) => equipment.ListCategoriesAsync(ct);
 
