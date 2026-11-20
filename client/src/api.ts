@@ -30,7 +30,7 @@ async function request<T>(method: 'GET' | 'POST', path: string, body?: unknown):
 
   const headers: Record<string, string> = {};
   if (body !== undefined) headers['Content-Type'] = 'application/json';
-  if (method !== 'GET' && csrfToken) headers['X-CSRF-TOKEN'] = csrfToken;
+  if (method !== 'GET' && csrfToken) headers['RequestVerificationToken'] = csrfToken;
 
   let response: Response;
   try {

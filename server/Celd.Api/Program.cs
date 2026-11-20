@@ -6,8 +6,6 @@ using Celd.Api.Domain;
 using Celd.Api.Http;
 using Microsoft.AspNetCore.Authentication.Cookies;
 using Microsoft.AspNetCore.Identity;
-using Microsoft.AspNetCore.Mvc;
-using Microsoft.AspNetCore.Mvc.Infrastructure;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Diagnostics;
 
@@ -46,14 +44,6 @@ builder.Services
     });
 builder.Services.AddAuthorization();
 
-builder.Services.AddAntiforgery(options =>
-{
-    options.HeaderName = "X-CSRF-TOKEN";
-    options.Cookie.Name = "celd.csrf";
-    options.Cookie.SameSite = SameSiteMode.Strict;
-    options.Cookie.SecurePolicy = cookieSecurity;
-});
-
 // ---- Central Application Service and domain services ----------------------------------------
 builder.Services.AddSingleton(TimeProvider.System);
 builder.Services.AddScoped<HistoryOperations>();
@@ -62,10 +52,9 @@ builder.Services.AddScoped<ReservationService>();
 builder.Services.AddScoped<CentralApplicationService>();
 
 // ---- API Controllers ---------------------------------------------------------------------------
-// [AutoValidateAntiforgeryToken]'s filter lives in MVC's view-features services, which AddControllers() omits.
+// CSRF (NFR-SEC-002) is declared per controller with [AutoValidateAntiforgeryToken] (see ADR-003).
+// Required: that attribute's filter is registered by MVC's view features, which AddControllers() omits.
 builder.Services.AddMvcCore().AddViews();
-// CSRF is enforced by [AutoValidateAntiforgeryToken] on the controllers; this only formats its failures as csrf_failed.
-builder.Services.AddSingleton<IClientErrorFactory, CeldClientErrorFactory>();
 builder.Services
     .AddControllers()
     .AddJsonOptions(o => o.JsonSerializerOptions.Converters.Add(new JsonStringEnumConverter()))

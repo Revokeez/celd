@@ -157,7 +157,7 @@ public sealed class ApiClient(HttpClient http)
         using var request = new HttpRequestMessage(HttpMethod.Post, path) { Content = JsonContent.Create(body ?? new { }) };
         if (withCsrf)
         {
-            request.Headers.Add("X-CSRF-TOKEN", _csrf);
+            request.Headers.Add("RequestVerificationToken", _csrf);
         }
 
         return await http.SendAsync(request);

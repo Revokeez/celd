@@ -63,7 +63,7 @@ public sealed class AuthorizationApiTests(PostgresFixture postgres) : Integratio
         var raw = Factory.CreateDefaultClient(BaseUri);
 
         var csrfResponse = await raw.GetAsync("/api/auth/csrf");
-        var csrfCookie = csrfResponse.Headers.GetValues("Set-Cookie").First(c => c.StartsWith("celd.csrf=")).Split(';')[0];
+        var csrfCookie = csrfResponse.Headers.GetValues("Set-Cookie").First(c => c.StartsWith(".AspNetCore.Antiforgery.")).Split(';')[0];
         var token = (await csrfResponse.Content.ReadFromJsonAsync<CsrfTokenDto>())!.Token;
 
         using var login = new HttpRequestMessage(HttpMethod.Post, "/api/auth/login")
@@ -71,7 +71,7 @@ public sealed class AuthorizationApiTests(PostgresFixture postgres) : Integratio
             Content = JsonContent.Create(new { userName = TestUsers.Student1, password = TestUsers.Password }),
         };
         login.Headers.Add("Cookie", csrfCookie);
-        login.Headers.Add("X-CSRF-TOKEN", token);
+        login.Headers.Add("RequestVerificationToken", token);
         var response = await raw.SendAsync(login);
         Assert.Equal(HttpStatusCode.OK, response.StatusCode);
 
@@ -163,7 +163,8 @@ public sealed class AuthorizationApiTests(PostgresFixture postgres) : Integratio
 
         var response = await student1.PostAsync("/api/reservations", new { equipmentItemId = await ItemIdAsync("CAM-001") }, withCsrf: false);
 
-        Assert.Equal("csrf_failed", await AssertProblemAsync(response, HttpStatusCode.BadRequest, "Validation"));
+        // Rejected by [AutoValidateAntiforgeryToken]; the body is ASP.NET Core's stock 400 problem (ADR-003).
+        Assert.Equal(HttpStatusCode.BadRequest, response.StatusCode);
         await using var db = NewDb();
         Assert.Equal(0, await db.Reservations.CountAsync());
     }

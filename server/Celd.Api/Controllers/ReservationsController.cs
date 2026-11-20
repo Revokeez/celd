@@ -14,7 +14,7 @@ namespace Celd.Api.Controllers;
 [ApiController]
 [Route("api/reservations")]
 [Authorize]
-[AutoValidateAntiforgeryToken] // NFR-SEC-002: every POST needs the X-CSRF-TOKEN header; GETs are exempt.
+[AutoValidateAntiforgeryToken] // NFR-SEC-002: every POST needs the RequestVerificationToken header; GETs are exempt.
 public sealed class ReservationsController(CentralApplicationService app) : ControllerBase
 {
     // UC-002

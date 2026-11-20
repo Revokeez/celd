@@ -106,7 +106,7 @@ Where each critical rule is enforced:
 | Stale updates | `Reservation.Version` concurrency token | A change based on an outdated read gets 409 `stale_state`. |
 | BR-RES-004 atomic history | `ReservationService` + `HistoryOperations` | Change and event are saved in **one** `SaveChanges` call, which is one transaction. |
 | FR-AUT-002 sign-out | `Auth/SessionCookieEvents.cs` | Sessions are stored server-side; a copied cookie stops working after sign-out. |
-| NFR-SEC-002 CSRF | `[AutoValidateAntiforgeryToken]` on `AuthController`, `ReservationsController`, `StaffReservationsController`; failures formatted by `Http/CeldClientErrorFactory.cs` | Every POST needs the `X-CSRF-TOKEN` header. |
+| NFR-SEC-002 CSRF | `[AutoValidateAntiforgeryToken]` on `AuthController`, `ReservationsController`, `StaffReservationsController` (ADR-003) | Every POST needs the `RequestVerificationToken` header. A missing or invalid token gets a plain 400. |
 
 ## 6. Test
 
@@ -167,7 +167,7 @@ There is no DELETE endpoint (BR-RES-008).
 | --- | --- |
 | `ConnectionStrings:Celd is not configured` | Run the user-secrets commands in section 3. |
 | Sign-in always fails | That seed user had no password when the database was first seeded. Set it, then drop the `celd` database (or `docker compose down -v`) and restart. |
-| Every POST returns 400 `csrf_failed` | The client must call `/api/auth/csrf` again after sign-in or sign-out. `api.ts` does this; custom scripts must too. |
+| Every POST returns 400 `Bad Request` | Missing or stale CSRF token. Send it in the `RequestVerificationToken` header, and call `/api/auth/csrf` again after sign-in or sign-out. `api.ts` does this; custom scripts must too. |
 | Integration tests fail to start | Docker is not running. Start it, or set `CELD_TEST_POSTGRES`. |
 | `db-probe/run-probe.sh` loads nothing when run as root | The `postgres` account must be able to read `db-probe/schema.sql`. Run it from a folder that account can read. |
 
